@@ -149,52 +149,53 @@ abnt-repeated-author-omit = yes % autores com + de uma entrada recebem '____.'
 
 \chapter{Introdução}
 
+	Quando se pensa no desenvolvimento de um sistema deve se pelo menos supor quais são os possíveis tipos de usuário, e com base nisso e que se faz o planejamento para que tipo de dispositivo será feito o desenvolvimento, no entanto, mesmo que se tenha um público alvo definido há outra questão que realmente é o fator que realmente influencia na  decisão de desenvolvimento, os tipos de dispositivos que irão rodar a aplicação.
 	
+	Tendo possibilidade de que seja em ambiente Web, desktop ou Móvel isso deve ser decidido com base na finalidade do projeto. Deve se levar em consideração os diferentes tipos de hardware, processamento, tamanho da tela, conexão com a internet e outros fatores que o desenvolvedor não decide.
+	Esse trabalho foi proposto como uma extensão de um outro trabalho que também está sendo desenvolvido, no qual sua proposta e a disponibilização para o público de informações da cesta básica de Paraíso do Tocantins.
+	
+	A proposta do primeiro trabalho é registrar e disponibilizar por meio de um sistema web para a população os dados, já esse trabalho tem como foco expandir essas informações também para o ambiente móvel, ou seja, o desenvolvimento de um aplicativo.
+	Os principais sistemas operacionais móveis que dominam o mercado são o Android e o iOS, tornando ambos os mais utilizados atualmente, em 2018 o Android registrou venda de 85,9\% e iOS 14,1\% sobre todos os dispositivos vendidos, outros sistemas operacionais registraram vendas inferiores a 0,02\% (CORAZZA, 2018).
+	
+	Como esses são os dois principais sistemas operacionais móveis mais predominantes no mercado eles acabam sendo as principais escolhas para o desenvolvimento de aplicativos, o que fez esse projeto focar no desenvolvimento para essa plataformas. 
+	Devido há grande diversidade de modelos, plataformas e linguagens de programação no desenvolvimento de aplicativos isso dificulta e aumenta o tempo de criação de aplicativo nativos, para facilitar o desenvolvimento existem frameworks que auxiliam nessa tarefa (NUNES, 2013).
+	
+	Depois de verificar os frameworks disponíveis no mercado o escolhido foi o Flutter que permite o desenvolvimento para Android e iOS de forma nativa utilizando a linguagem Dart a partir da composição de Widgets (ABRANCHES, 2018).
 	
 
 \chapter{Problema de pesquisa}
 	
-		A alimentação é um fator vital e fonte de prazer, sendo muito mais que apenas nutrientes, seu significado próprio para cada pessoa ou grupo constituindo um traço de identidade, sendo importante para a saúde eo bem estar da vida de cada pessoa (LOUREIRO,2014).
-		
-		Está definido no Decreto Lei 399 a Cesta Básica de Alimentos, especificando também os produto e suas quantidades que devem ser pesquisados. O cálculo é feito com base em pesquisas de preços nas capitais dos estados e nos hábitos de compra dos trabalhadores, sendo os produtos da Cesta Básica os produtos essenciais mais comprados nos principais comércios (DIEESE, 2009).
-		
-		O valor da cesta básica está ligado ao salário mínimo, pois a constituição de 1988 define o salário mínimo como aquele fixado em lei, nacionalmente unificado, capaz de atender às suas necessidades vitais básicas do trabalhador e às de sua família com reajustes periódicos que lhe preservem o poder aquisitivo (DIEESE, 2009).
-		
-		O Tocantins não entra no cálculo da cesta básica, pois o DIEESE não possui departamento e recursos financeiros para que o estado também esteja na pesquisa, somente 18 Unidades da Federação é feita a pesquisa de preço.
-		
-		Todo mês desde novembro de 2013 o colegiado do curso de Bacharel em Administração juntamente com seus alunos fazem a pesquisa de preço dos produtos da cesta básica de Paraíso do Tocantins, no entanto não há uma forma de divulgar esses dados de forma que se torna-se acessível, pois os responsáveis pela coleta não tem nenhuma forma que atualmente possam fazer isso de forma prática.
-		
-		As formas atualmente de divulgação dos dados é quando alguém solicita entrando em contato com a instituição ou quando sai em notícias de sites locais. Esse meios não são considerados eficientes para a se conseguir o máximo de divulgação possível.
-		
-		Portanto, define-se o problema de pesquisa deste trabalho pela seguinte questão: Como tornar acessíveis as informações da cesta básica de Paraíso do Tocantins?
-		
+		Apresentação do problema que norteará a pesquisa para o TCC. A enunciação do problema deve ser,	preferencialmente, em forma de uma pergunta.
 	
 \chapter{Justificativa}
 	
-		Quando não se tem conhecimento sobre de qual é a melhor opção dentre as possibilidades disponíveis pode não se ter um direcionamento para fazer a melhor escolha, uma decisão antes de ser tomada precisa de conhecimento de todos os fatores, pois assim se faz o melhor julgamento (BEZERRA, 2013).
+		A alimentação é um fator vital e fonte de prazer, sendo muito mais que apenas nutrientes, seu significado próprio para cada pessoa ou grupo constituindo um traço de identidade, sendo importante para a saúde eo bem estar da vida de cada pessoa (LOUREIRO,2014).
+		
+		Está definido no Decreto Lei 399 a Cesta Básica de Alimentos, especificando também os produto e suas quantidades que devem ser pesquisados. O cálculo é feito com base em pesquisas locais de preços nas capitais dos estados com base nos hábitos de compra dos trabalhadores, sendo os produtos da Cesta Básica os produtos essenciais mais comprados nos principais comércios (DIEESE, 2009).
+		
+		Desde novembro de 2013 o colegiado de administração juntamente com seus alunos coletam dados da cesta baśica de Paraíso do Tocantins, esses dados ficam planilhas eletrônicas com os participantes do projeto e são divulgados em artigos, TCCs ou notícias locais.
+		
+		Existe uma estimativa de consumo de cada produto, então com base nesse estimativa e preço médio dos produtos calcula-se o valor da cesta básica. O Tocantins não entra no cálculo da cesta básica, pois o DIEESE não possui departamento e recursos financeiros para que o estado também esteja na pesquisa, somente 18 Unidades da Federação é feita a pesquisa de preço.
+		O valor da cesta básica está ligado ao salário mínimo, pois a constituição de 1988 define o salário mínimo como aquele fixado em lei, nacionalmente unificado, capaz de atender às suas necessidades vitais básicas do trabalhador e às de sua família com reajustes periódicos que lhe preservem o poder aquisitivo (DIEESE, 2009).
 		
 		Não adianta ter pesquisas que registram os dados da cesta básica se os mesmo não se tornarem de conhecimento público, pois não se toma decisões com base em informações ao qual não se tem conhecimento.
 		
-		Com o objetivo de disponibilizar esse dados para consulta pública onde toda a população pudesse ver e analisar esses dados de forma que saber se está pagando mais caro pelos produtos e com uma base histórica é possível ver o evolução dos valores da cesta básica.
+		Com o objetivo de disponibilizar esse dados para consulta pública onde toda a população pudesse ver e analisar esses dados de forma que saber se está pagando mais caro pelos produtos e com uma base histórica é possível ver o evolução dos valores da cesta básica. foi proposto uma parceria os participantes da coleta dos dados um site onde pudesse disponibilizar esses dados para consulta pública.
 		
 		No entanto mesmo com o sistema web disponibilizando essas informações ainda pode acabar não sendo totalmente prático para a população, pois muitos só lembram a relevância de se ter esses dados quando já estão dentro de um supermercado sem acesso a internet. Já com um aplicativo os dados ficariam mais facilmente disponíveis e acessível, pois a maioria das pessoas possuem um smartphone poderão acessar os dados mesmo sem internet.
-		
-		Quando já tiver dados estruturados e relacionais possibilita-se futuramente utilizar-se dos mesmos para mineração de dados, podendo assim estudar os impactos da variação do preço para a população e a relação entre salário e poder aquisitivo.
-		
 	
 \chapter{Objetivos}
 	
 	\section{Objetivo geral}
 	
-		O Objetivo deste trabalho é desenvolver um sistema Web e um aplicativo que possibilita para a população de Paraíso consultar o preço e produtos das Cesta Básica.
+		O Objetivo Geral deve ter relação íntima com o problema de	pesquisa e deve apontar o rumo a ser percorrido para encontrar a resposta. Já os	Objetivos Específicos desdobram o Objetivo Geral nos passos necessários para executar o	Objetivo Geral. Os objetivos devem indicar	exatamente a ação a ser tomada.
 	
 	\section{Objetivos específicos}
 	
 		\begin{enumerate}
-			\item Entender a metodologia que calcula o preço da cesta básica;
-			\item Definir um modelo de banco de dados que possibilite armazenar os dados coletados;
-			\item Criar sistema Web para divulgação e registro dos preços;
-			\item Desenvolvimento de um aplicativo que se conecte ao sistema web.
+			\item Objetivo específico 1;
+			\item Objetivo específico 2;
+			\item Objetivo específico n.
 		\end{enumerate}
 
 \chapter{Revisão da Literatura}
