@@ -1,0 +1,270 @@
+\documentclass{ifto-tex}
+
+\usepackage{lmodern}			% Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{float}
+
+% Uso da fonte Arial (IFTO)
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf,
+versalete,
+abnt-emphasize = bf, % destaca o titulo em negrito;
+abnt-etal-list = 3, % trabalhos com mais de 3 autores recebem et al.,;
+abnt-etal-text = it, % escreve o et al., em italico;
+abnt-and-type = &, % usa o carater '&' no lugar de 'e' para mais de um autor;
+abnt-last-names = abnt, % trata sobrenomes 'estritamente' conforme a ABNT; e
+abnt-repeated-author-omit = yes % autores com + de uma entrada recebem '____.'
+]{abntex2cite}
+
+% Configuração das referências bibliográficas
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{	}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Informações da capa e da folha de rosto
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\titulo{Sistema Web e Aplicativo para divulgação da Cesta Básica de Paraíso do Tocantins}
+
+\autor{Gerverson Silva Araujo}
+
+\local{Paraíso do Tocantins, TO}
+
+\data{2019}
+
+% Alterar o nome do campus e do curso, caso houver necessidade
+\instituicao{
+	Instituto Federal de Educação, Ciência e Tecnologia do Tocantins - IFTO\\
+	\textit{Campus} Paraíso do Tocantins\\
+	Gerência de Ensino\\
+	Curso Superior de Tecnologia em Gestão da Tecnologia da Informação
+}
+
+\tipotrabalho{TCC}
+
+% Informar {Titulação}{Nome}
+\orientador{Dr.}{Fábio Silveira Vidal}
+
+% Alterar o preâmbulo conforme necessário
+\preambulo{Pré-projeto do Trabalho de Conclusão de Curso
+	apresentado como requisito parcial para
+	obtenção do Título de Bacharelado em Sistemas de Informação  Informação do Instituto Federal do Tocantins,
+	Campus Paraíso do Tocantins
+}
+
+
+% Configuração da geração do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{projeto de pesquisa}, 
+		colorlinks=false,
+		bookmarksdepth=4,
+		pdfborder={0 0 0},
+}
+\makeatother
+
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% compila o indice
+\makeindex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CORPO DO TRABALHO ...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+% Inicializa a parte pre-textual
+\pretextual
+
+% Imprime a capa
+\imprimircapa
+
+% Imprime a folha de rosto
+\imprimirfolhaderosto
+
+% ------------------------------------------------------------------------------
+% LISTA DE FIGURAS (Não altere nada aqui)
+% ------------------------------------------------------------------------------
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+
+
+% ------------------------------------------------------------------------------
+% LISTA DE TABELAS (Não altere nada aqui)
+% ------------------------------------------------------------------------------
+\pdfbookmark[0]{\contentsname}{lot}
+\listoftables*
+\cleardoublepage
+
+% ------------------------------------------------------------------------------
+% LISTA DE SIGLAS E ABREVIATURAS
+% ------------------------------------------------------------------------------
+% Edite a lista de siglas conforme o modelo abaixo
+\begin{siglas}
+	\item[IBGE]{Instituto Brasileiro de Geografia e Estatística}
+	\item[IFTO]{Instituto Federal do Tocantins}
+	% Incluir as siglas aqui ...
+\end{siglas}
+
+
+% ------------------------------------------------------------------------------
+% SUMÁRIO (Não altere nada aqui)
+% ------------------------------------------------------------------------------
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+
+% ------------------------------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ------------------------------------------------------------------------------
+
+% Introduz a parte textual
+\textual
+
+\chapter{Introdução}
+
+	Quando se pensa no desenvolvimento de um sistema deve se pelo menos supor quais são os possíveis tipos de usuário, e com base nisso e que se faz o planejamento para que tipo de dispositivo será feito o desenvolvimento, no entanto, mesmo que se tenha um público alvo definido há outra questão que realmente é o fator que realmente influencia na  decisão de desenvolvimento, os tipos de dispositivos que irão rodar a aplicação.
+	
+	Tendo possibilidade de que seja em ambiente Web, desktop ou Móvel isso deve ser decidido com base na finalidade do projeto. Deve se levar em consideração os diferentes tipos de hardware, processamento, tamanho da tela, conexão com a internet e outros fatores que o desenvolvedor não decide.
+	Esse trabalho foi proposto como uma extensão de um outro trabalho que também está sendo desenvolvido, no qual sua proposta e a disponibilização para o público de informações da cesta básica de Paraíso do Tocantins.
+	
+	A proposta do primeiro trabalho é registrar e disponibilizar por meio de um sistema web para a população os dados, já esse trabalho tem como foco expandir essas informações também para o ambiente móvel, ou seja, o desenvolvimento de um aplicativo.
+	Os principais sistemas operacionais móveis que dominam o mercado são o Android e o iOS, tornando ambos os mais utilizados atualmente, em 2018 o Android registrou venda de 85,9\% e iOS 14,1\% sobre todos os dispositivos vendidos, outros sistemas operacionais registraram vendas inferiores a 0,02\% (CORAZZA, 2018).
+	
+	Como esses são os dois principais sistemas operacionais móveis mais predominantes no mercado eles acabam sendo as principais escolhas para o desenvolvimento de aplicativos, o que fez esse projeto focar no desenvolvimento para essa plataformas. 
+	Devido há grande diversidade de modelos, plataformas e linguagens de programação no desenvolvimento de aplicativos isso dificulta e aumenta o tempo de criação de aplicativo nativos, para facilitar o desenvolvimento existem frameworks que auxiliam nessa tarefa (NUNES, 2013).
+	
+	Depois de verificar os frameworks disponíveis no mercado o escolhido foi o Flutter que permite o desenvolvimento para Android e iOS de forma nativa utilizando a linguagem Dart a partir da composição de Widgets (ABRANCHES, 2018).
+	
+
+\chapter{Problema de pesquisa}
+	
+		Apresentação do problema que norteará a pesquisa para o TCC. A enunciação do problema deve ser,	preferencialmente, em forma de uma pergunta.
+	
+\chapter{Justificativa}
+	
+		A alimentação é um fator vital e fonte de prazer, sendo muito mais que apenas nutrientes, seu significado próprio para cada pessoa ou grupo constituindo um traço de identidade, sendo importante para a saúde eo bem estar da vida de cada pessoa (LOUREIRO,2014).
+		
+		Está definido no Decreto Lei 399 a Cesta Básica de Alimentos, especificando também os produto e suas quantidades que devem ser pesquisados. O cálculo é feito com base em pesquisas locais de preços nas capitais dos estados com base nos hábitos de compra dos trabalhadores, sendo os produtos da Cesta Básica os produtos essenciais mais comprados nos principais comércios (DIEESE, 2009).
+		
+		Desde novembro de 2013 o colegiado de administração juntamente com seus alunos coletam dados da cesta baśica de Paraíso do Tocantins, esses dados ficam planilhas eletrônicas com os participantes do projeto e são divulgados em artigos, TCCs ou notícias locais.
+		
+		Existe uma estimativa de consumo de cada produto, então com base nesse estimativa e preço médio dos produtos calcula-se o valor da cesta básica. O Tocantins não entra no cálculo da cesta básica, pois o DIEESE não possui departamento e recursos financeiros para que o estado também esteja na pesquisa, somente 18 Unidades da Federação é feita a pesquisa de preço.
+		O valor da cesta básica está ligado ao salário mínimo, pois a constituição de 1988 define o salário mínimo como aquele fixado em lei, nacionalmente unificado, capaz de atender às suas necessidades vitais básicas do trabalhador e às de sua família com reajustes periódicos que lhe preservem o poder aquisitivo (DIEESE, 2009).
+		
+		Não adianta ter pesquisas que registram os dados da cesta básica se os mesmo não se tornarem de conhecimento público, pois não se toma decisões com base em informações ao qual não se tem conhecimento.
+		
+		Com o objetivo de disponibilizar esse dados para consulta pública onde toda a população pudesse ver e analisar esses dados de forma que saber se está pagando mais caro pelos produtos e com uma base histórica é possível ver o evolução dos valores da cesta básica. foi proposto uma parceria os participantes da coleta dos dados um site onde pudesse disponibilizar esses dados para consulta pública.
+		
+		No entanto mesmo com o sistema web disponibilizando essas informações ainda pode acabar não sendo totalmente prático para a população, pois muitos só lembram a relevância de se ter esses dados quando já estão dentro de um supermercado sem acesso a internet. Já com um aplicativo os dados ficariam mais facilmente disponíveis e acessível, pois a maioria das pessoas possuem um smartphone poderão acessar os dados mesmo sem internet.
+	
+\chapter{Objetivos}
+	
+	\section{Objetivo geral}
+	
+		O Objetivo Geral deve ter relação íntima com o problema de	pesquisa e deve apontar o rumo a ser percorrido para encontrar a resposta. Já os	Objetivos Específicos desdobram o Objetivo Geral nos passos necessários para executar o	Objetivo Geral. Os objetivos devem indicar	exatamente a ação a ser tomada.
+	
+	\section{Objetivos específicos}
+	
+		\begin{enumerate}
+			\item Objetivo específico 1;
+			\item Objetivo específico 2;
+			\item Objetivo específico n.
+		\end{enumerate}
+
+\chapter{Revisão da Literatura}
+	\section{Cesta Básica}
+	O termo cesta básica se refere há um conjunto de produtos alimentícios que que um trabalhador adulto precisa consumir para se manter biologicamente e socialmente, sendo importante para avaliação do desenvolvimento socioeconômico de uma localidade.
+	
+	Com a cesta básica pode se avaliar o salário mínimo e entender comportamento do poder de compra, sendo que o salário mínimo constitucional deve atender às necessidades que os trabalhadores e suas famílias precisam para se manter na sociedade (ARAÚJO, 2007).
+	
+	Como o DIEESE não possui meio suficientes para poder fazer a pesquisa em todo o território nacional essas áreas acabam ficando sem uma estimativa de preço. Alguns projetos com o do IFTO Campus Paraíso tentam suprimir essa falta de informações dessas localidades.
+	
+	\section{Desenvolvimento de sistema para Internet}
+	A Internet é a mídia mais promissora atualmente, a distância geográfica hoje não é mais um problema para se transmitir informação, sendo acessível para ricos e pobres, seu custo de criação e divulgação de conteúdo é extremamente mais baixo, tornando a internet um lugar atrativo para divulgar conteúdo (MORAN, 1997).
+	
+	Com a internet pode-se acessar uma enorme quantidade de informações que estão disponíveis em todo o mundo, pois pode ser considerada a mais completa, abrangente e complexa ferramenta de aprendizado do mundo. Com a internet pode se pesquisar e discutir várias fontes de informação e diferentes áreas do conhecimento (GARCIA, 2002).
+	
+	A tecnologia Web funciona com uma forma de repositório de documentos eletrônicos que ficam armazenados em em vários servidores, tanto os cliente com os servidores são ligados a rede mundial de computadores, também chamado de internet. O conteúdo presente na rede pode ser visualizado por qualquer dispositivo que possa se conectar a rede, onde páginas web se interligam uma às outras, assim criando uma rede de informação (JUNIOR, 2009).
+	
+	O processo para desenvolvimento de um sistema web não pode ser considerado algo trivial, pois envolve analisar e compreender determinado problema, devem ser incorporados vários aspectos para que ele possa ser acessado de forma remota e segura no navegador (MILETTO, 2014).
+	
+	Ao desenvolver uma aplicação que realize tarefas repetitivas ou que são comuns a vários sistemas é recomendado a utilização de um framework, pois assim evita-se de perder tempo montando e testando um sistema para validação de dados se existe uma ferramenta que já faz isso, além de uma comunidade que contribui para o aumento da segurança e da estabilidade (Rafael Jaques, 2016).
+	
+	\section{Django}
+	Django é um framework de código aberto para o desenvolvimento escrito na linguagem Python, criado para desenvolvimento rápido de aplicações web.  Sua estrutura é dividida em 3 camadas, sendo Model, Template e View. Conseguiu popularidade ao se firmar como uma aplicação web dinâmica altamente eficaz, pois reduz tempo e permite construir aplicações WEB com qualidade e de fácil manutenção (BADIN, 2017).
+	
+	Como o Django foi desenvolvido em um ambiente de sala de notícias acelerado, ele foi projetado para tornar as tarefas comuns de desenvolvimento da Web mais rápidas e fáceis. 
+	Sua sintaxe do modelo de dados oferece muitas maneiras ricas de representar seus modelos, sua estrutura resolve muitos anos de problemas no esquema do banco de dados. Sendo incluso uma API Python gratuita e rica para acessar seus dados e uma interface administrativa profissional pronta para produção (Django, 2009).
+	
+	\section{Sistemas Operacionais Móveis e Aplicativos Híbrido}
+	Devido a facilidade gerada pelos dispositivos móveis que substituem quase todas as funções de um computador de mesa fez com eles se tornasse cada vez mais popular, pois em qualquer lugar, a qualquer hora do dia, direto da palma da sua mão pode se fazer uma grande quantidade de tarefas(CAMILA, 2010).
+	
+	Atualmente os sistemas operacionais móveis mais dominantes no mercado são o Android que representa 74,45\% e o iOS com 22,85\% (Martyn 2019). Baseado na informação de estatísticas de mercado se torna mais vantajoso desenvolver para essa duas plataformas se o objetivo for atingir o maior número de usuários.
+	
+	No início de um projeto os desenvolvedores devem decidir construir aplicativos direcionados para um determinada plataforma ou construir aplicativos genéricos, na web, que podem ser utilizados por qualquer dispositivo, ambas abordagens possuem vantagens e desvantagens (Henrique, 2014).
+	
+	É um erro comum para a desenvolvimento móvel achar que não é necessário um aplicativo só por que a aplicação web abre no browser do dispositivo, páginas web não foram projetadas para poderem serem acessadas em dispositivos móveis, há questões como tamanho, tags específicas, animações complexas e efeito de mouseover, isso gera baixa usabilidade e performance (RIBEIRO, 2013).
+	
+	No entanto quando se determina uma plataforma específica faz com que as outras plataformas sejam excluídas e assim os usuários que utilizam a plataforma acabam sendo prejudicado.
+	Com o advento da programação para tecnologias móveis surgiram inúmeros frameworks e a divisão de soluções móveis foram três categorias: Nativa, WebApps e Híbridas (Francisco, 2013).
+	
+	No entanto quando se desenvolve aplicativos nativos para duas plataformas diferentes gera um maior gasto de tempo e dinheiro, e quando se desenvolve aplicativos do tipo WebApps não é possível utilizar recursos do dispositivo, nesse caso os aplicativos híbridos que são parte nativo e parte web, em determinados casos podem ser mais vantajoso sua utilização.
+	Os aplicativos multiplataforma possuem vantagens pois permitem um maior alcance de usuários, o desenvolvimento se torna facilitado, mais fácil manutenção, tem um custo menor no desenvolvimento e o mesmo código irá em mais de uma plataforma (CYGNIS MEDIA, 2013).
+	
+	
+	\section{Flutter}
+	Flutter é um SDK para criar aplicativos para dispositivos móveis do Google para criar interfaces nativas de alta qualidade no iOS e Android, foi projetado para um que os desenvolvedores possa desenvolver em tempo recorde, gratuito e de código aberto
+	(Flutter, 2019).
+	O diferencial do Flutter no desenvolvimento é sua forma de criar os aplicativos, pois o Flutter não utiliza os widgets fornecidos pelo dispositivos, em vez disso ele utiliza o seu próprio mecanismo de renderização de alto desempenho para desenhar widgets (CORAZZA, 2018).
+	Sua estrutura fornece para que os designers uma visão que permite uma grande liberdade sem limitações, com isso pode se criar aplicativos com o máximo de criatividade. Seus recursos de composição permitem sobrepor e animar gráficos, vídeo, texto e controles sem limitação, proporcionando uma experiências com pixels perfeitos no iOS e no Android (Flutter, 2019).
+	
+	
+\chapter{Procedimentos metodológicos}
+	
+	Deve dizer como o trabalho será realizado. Aborda quatro componentes: descrição do foco do estudo; caracterização da pesquisa (tipo de pesquisa); plano de coleta de dados (técnicas e instrumentos de coleta de dados e informações afins); plano de análise dos dados (técnicas de sistematização e análise dos dados e as formas de apresentação dos resultados).
+
+\chapter{Cronograma}
+
+	Parte final do texto na qual são apresentadas as considerações finais acerca dos objetivos, das variáveis e do problema da pesquisa. Não usar esta seção para sumarizar os resultados (o que já foi feito no Resumo), mas destacar o progresso e as aplicações que o trabalho propicia. Enfatizar as limitações que persistem, apresentando, sempre que apropriado, sugestões para trabalhos futuros.
+
+% Finaliza o bookmarking do PDF
+\phantompart
+
+% ------------------------------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ------------------------------------------------------------------------------
+
+% Introduz a parte pós-textual
+\postextual
+
+% Insere as referências bibliográficas
+\bibliography{bibliografia}
+
+\end{document}
