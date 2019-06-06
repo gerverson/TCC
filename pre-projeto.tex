@@ -162,7 +162,7 @@ O mercado tem uma alta variação de preço dos produtos, um estabelecimento pod
 
 As pesquisas de preço do valor da cesta básica vem no sentido de avaliar o custo que está sendo pago pelos consumidores dos produtos essenciais, para gerar uma estatística de quanto as pessoas estão pagando em média por determinado produto em determinada cidade. Mesmo tendo os dados da pesquisa coletados eles não mostram muita relevância para a sociedade se não forem de conhecimento popular, pois o IFTO Campus Paraíso faz essa pesquisa, no entanto não tem uma forma de fazer a divulgação desses dados.
 
-Esse trabalho foi proposto como uma a forma de disponibilizar para o população de informações da cesta básica de Paraíso do Tocantins, e como informações disponibilizadas na internet são de fácil acesso foi definido que seria um sistema web para essa divulgação. Para que fosse possível tornar mais prático e fácil tanto para quem coleta e para a população foi planejado o desenvolvimento de um sistema Web e um aplicativo móvel para smartphones, assim pode se atingir o maior número de consumidores para disseminar os dados da pesquisa.
+Esse trabalho foi proposto como uma a forma de disponibilizar para o população de informações da cesta básica de Paraíso do Tocantins, e como informações disponibilizadas na internet são de fácil acesso, esse foi o meio escolhido para a divulgação. Para que fosse possível tornar mais prático e fácil tanto para quem coleta e para a população foi planejado o desenvolvimento de um sistema Web e um aplicativo móvel para smartphones, assim pode se atingir o maior número de consumidores para disseminar os dados da pesquisa.
 
 	
 	
@@ -209,7 +209,7 @@ Esse trabalho foi proposto como uma a forma de disponibilizar para o população
 			\item Entender a metodologia que calcula o preço da cesta básica;
 			\item Definir um modelo de banco de dados que possibilite armazenar os dados coletados;
 			\item Criar sistema Web para divulgação e registro dos preços;
-			\item Desenvolvimento de um aplicativo que se conecte ao sistema web.
+			\item Desenvolvimento de um aplicativo que se conecte ao sistema Web.
 		\end{enumerate}
 
 \chapter{Revisão da Literatura}
@@ -229,9 +229,9 @@ Ao desenvolver uma aplicação que realize tarefas repetitivas ou que são comun
 
 	
 	\section{Django}
-Django é um framework de código aberto para o desenvolvimento escrito na linguagem Python, criado para desenvolvimento rápido de aplicações web.  Sua estrutura é dividida em 3 camadas, sendo Model, Template e View. Conseguiu popularidade ao se firmar como uma aplicação web dinâmica altamente eficaz, pois reduz tempo e permite construir aplicações Web com qualidade e de fácil manutenção \cite{badindesenvolvimento}.
+Django é um framework de código aberto para o desenvolvimento escrito na linguagem Python, criado para desenvolvimento rápido de aplicações Web.  Sua estrutura é dividida em 3 camadas, sendo Model, Template e View. Conseguiu popularidade ao se firmar como uma aplicação Web dinâmica altamente eficaz, pois reduz tempo e permite construir aplicações Web com qualidade e de fácil manutenção \cite{badindesenvolvimento}.
 
-Como o Django foi desenvolvido para um ambiente de sala de notícias onde precisava desenvolver rápido, ele foi projetado para tornar as tarefas comuns de desenvolvimento da Web mais rápidas e fáceis. Sua sintaxe do modelo de dados oferece muitas maneiras ricas de representar seus modelos, sua estrutura resolve muitos anos de problemas no esquema do banco de dados. Sendo incluso uma API Python gratuita e rica para acessar seus dados e uma interface administrativa profissional pronta para produção \cite{Djangoem92:online}.
+Como o Django foi desenvolvido para um ambiente de sala de notícias onde precisava desenvolver rápido, ele foi projetado para tornar as tarefas comuns de desenvolvimento da Web mais rápidas e fáceis. Sua sintaxe do modelo de dados oferece muitas maneiras ricas de representar seus modelos, sua estrutura resolve muitos anos de problemas no esquema do banco de dados. Sendo incluso uma API Python gratuita e rica para acessar seus dados, e uma interface administrativa profissional pronta para produção \cite{Djangoem92:online}.
 
 	
 	\section{Sistemas Operacionais Móveis e Aplicativos Híbrido}
@@ -350,7 +350,7 @@ Para começar o projeto foi um levantamento de todos os dados já levantados da 
 	\caption{Lista de Produtos Pesquisados}
 	\end{longtable}
 	
-Os produtos foram selecionados conforme a tabela  foram selecionados com base na tabela de provisões mínimas estipuladas pelo Decreto Lei n$^{\circ}$ 399 de 1938 para o cálculo da cesta básica. Para complementar a pesquisa com com mais produtos foram incluídos na pesquisa outros produtos que também são consumidos pela população da cidade e que se encontram também nas pesquisas da Fundação PROCON SP e do PROCON/AP.
+Os produtos presentes na Tabela 01 foram selecionados com base na tabela de provisões mínimas estipuladas pelo Decreto Lei n$^{\circ}$ 399 de 1938 para o cálculo da cesta básica. Para complementar a pesquisa com com mais produtos foram incluídos na pesquisa outros produtos que também são consumidos pela população da cidade e que se encontram também nas pesquisas da Fundação PROCON SP e do PROCON/AP.
 
 Orientado pela metodologia do DIEESE e seguindo lista de produtos da tableta os alunos que participaram da pesquisa visitam todo mês 10 supermercados dentro da cidade de Paraíso do Tocantins, com base nas vendas dos produtos dentre esses supermercados após análise com base em produtos mais vendidos são as três marcas de cada tipo presente na tabela.
 
@@ -362,13 +362,13 @@ $\displaystyle\frac{\mbox {Base Produto$^{3}$ }}{\mbox { Preço Produto$^{1}$ }}
 	
 	\begin{enumerate}
 	\item Preço Produto: Preço do produto pesquisado exatamente como no estabelecimento.
-	\item Base de Cálculo: Como alguns produtos são medidos como Unidade e Metros não é possível utilizar a mesma regra de cálculo para os produtos de Quilo e Litros, então foi adicionado um campo chamado “Base de Cálculo”. Esse campo é equivalência da quantidade do produto, só que expresso em forma decimal para facilitar na hora de calcular.
+	\item Base de Cálculo: Como alguns produtos são medidos como Unidade e Metros não é possível utilizar a mesma regra de cálculo para os produtos de Quilo e Litros, então foi adicionado um campo chamado base de cálculo, esse campo faz equivalência da quantidade do produto, só que expresso em forma decimal para facilitar na hora de calcular.
 	\item Base Produto: Valor de equivalência em relação a quantidade do produto na embalagem.
 	\item Preço Percentual: Corresponde ao valor do produto se comprasse exatamente a quantidade estipulada na tabela.
 	
 \end{enumerate}
 
-	Para saber quanto seria o custo de um produto levando em conta a quantidade da tabela é feito a média de todos os preços percentual de tipo do produto, esse cálculo leva em conta todos os estabelecimentos que tem aquele produto. Para calcular o valor da cesta básica, é necessário somar a média dos preços percentuais dos produtos na tabela que estão incluídos na cesta básica.
+	Para saber quanto seria o custo de um produto levando em conta a quantidade da tabela é feito a média de todos os preços percentual do tipo do produto, esse cálculo leva em conta todos os estabelecimentos que tem aquele produto. Para calcular o valor da cesta básica, é necessário somar a média dos preços percentuais dos produtos na tabela que estão incluídos na cesta básica.
 	
 	Tendo em vista que o sistema deveria atender esse Cenário foi pensado inicialmente na melhor forma de calcular o valor da cesta básica, para isso foi montado um diagrama de banco de dados relacional que  atendesse esse sistema de forma a torná-lo expansivo se necessário.
 	\begin{figure}[H]
@@ -395,7 +395,7 @@ O Django possui uma estrutura bem simples de utilização, criando o arquivo de 
 \end{figure}
 Com isso foi aproveitado a parte de gerência de dados e usuários, não sendo necessário programar essa parte, no entanto para quem vai pesquisar os preços utilizando essa estrutura não ficaria fácil, pois seria necessário ter que fazer vários relacionamentos de dados manualmente.
 
-Para quem faz a pesquisa de preço foi programado um módulo que facilite, de forma de inicialmente ele pudesse escolher a data, o estabelecimento, o tipo do produto. Com isso ele só irá precisar escolher o produto e colocar o preço.
+Para quem faz a pesquisa de preço foi programado um módulo que facilite, de forma de inicialmente ele pudesse escolher a data, o estabelecimento, o tipo do produto, com isso ele só irá precisar escolher o produto e colocar o preço.
 
 	\begin{figure}[H]
 	\begin{center}
