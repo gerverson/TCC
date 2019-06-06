@@ -371,7 +371,7 @@ $\displaystyle\frac{\mbox {Base Produto$^{3}$ }}{\mbox { Preço Produto$^{1}$ }}
 	Para saber quanto seria o custo de um produto levando em conta a quantidade da tabela é feito a média de todos os preços percentual de tipo do produto, esse cálculo leva em conta todos os estabelecimentos que tem aquele produto. Para calcular o valor da cesta básica, é necessário somar a média dos preços percentuais dos produtos na tabela que estão incluídos na cesta básica.
 	
 	Tendo em vista que o sistema deveria atender esse Cenário foi pensado inicialmente na melhor forma de calcular o valor da cesta básica, para isso foi montado um diagrama de banco de dados relacional que  atendesse esse sistema de forma a torná-lo expansivo se necessário.
-	\begin{figure}[!h]
+	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[width=16.0cm, height= 9.0cm]{cestadiagrama.png}    % The printed column width is 8.4 cm.
 			\caption{Diagrama de Banco de Dados.} 
@@ -386,7 +386,7 @@ Após a finalização da decisão do banco de dados foi para o desenvolvimento d
 
 O Django possui uma estrutura bem simples de utilização, criando o arquivo de Model e descrevendo toda a modelagem do banco de dados na sua tela administrador onde é possível fazer toda a gerência dos dados, sem precisar programar toda a estrutura do CRUD.
 
-	\begin{figure}[!h]
+	\begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=16.0cm, height= 9.0cm]{cestaadmin.png}    % The printed column width is 8.4 cm.
 		\caption{Tela administrador do Django.} 
@@ -397,7 +397,7 @@ Com isso foi aproveitado a parte de gerência de dados e usuários, não sendo n
 
 Para quem faz a pesquisa de preço foi programado um módulo que facilite, de forma de inicialmente ele pudesse escolher a data, o estabelecimento, o tipo do produto. Com isso ele só irá precisar escolher o produto e colocar o preço.
 
-	\begin{figure}[!h]
+	\begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=16.0cm, height= 9.0cm]{cestacadastro.png}    % The printed column width is 8.4 cm.
 		\caption{Tela de Registro de Preços Pequisados} 
