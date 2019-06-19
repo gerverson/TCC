@@ -1,0 +1,201 @@
+\documentclass[c]{beamer}
+
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{url,color, colortbl} 
+\usepackage{subfigure}  
+\usepackage{makeidx} 
+\usepackage{subfloat}
+\usepackage{float}
+\usepackage{listings}    
+\usepackage{wrapfig}  
+\usepackage{verbatim}  
+\usepackage{caption}  
+\usepackage{algorithm,algorithmic}
+\usepackage[round]{natbib}
+\usepackage{beamerthemesplit}
+\usepackage{xcolor}  
+\usepackage{multirow}
+
+\definecolor{cl-programado}{rgb}{1,0.6,0}
+\definecolor{cl-realizado}{rgb}{0,0.7,0.32}
+\definecolor{cl-atrasado}{rgb}{0.75,0,0}
+\definecolor{cl-cabecalho}{rgb}{0.3,0.5,0.75}
+\definecolor{cl-impar}{rgb}{0.81, 0.85, 0.91}
+\definecolor{cl-par}{rgb}{0.91, 0.93, 0.87} 
+
+%-----   Themes ------%
+\usetheme{Madrid}
+\definecolor{cor}{rgb}{0.0,0.0,0.5}  
+\setbeamercolor{structure}{fg=cor}
+\linespread{1} 
+\beamertemplatenavigationsymbolsempty
+
+\title[Cesta Básica]{Sistema Web e Aplicativo para divulgação da Cesta Básica de Paraíso do Tocantins}
+
+\author[Gerverson Araujo]{Gerverson Silva Araujo
+\\\footnotesize{gerversonsa@gmail.com}}
+\institute[IFTO]{
+	\inst{}%
+		Instituto Federal do Tocantins - Campus Paraí­so do Tocantins
+}
+
+%logo Primeiro Slide
+\titlegraphic{\center\includegraphics[height=2.4cm]{logos.jpg}}
+
+%logo dos Slide
+%\logo{\includegraphics[scale=0.11]{logo.png}}
+
+% Formatar data{
+\newcommand{\MONTH}{%
+	\ifcase\the\month
+	\or Janeiro% 1
+	\or Fevereiro% 2
+	\or Março% 3
+	\or Abril% 4
+	\or Maio% 5
+	\or Junho% 6
+	\or Julho% 7
+	\or Agosto% 8
+	\or Setembro% 9
+	\or Outubro% 10
+	\or Novembro% 11
+	\or Dezembro% 12
+	\fi}
+\makeatletter
+\newcommand{\YEAR}{\@Roman{\the\year}}
+\makeatother
+\date{\MONTH, \the\year}
+%} Formatar data
+ 
+
+\begin{document}
+	
+	%plain -> retira o rodapé
+	%noframenumbering -> não conta a numeração da página
+	
+	\begin{frame}[plain,noframenumbering] 
+		\titlepage
+\setbeamertemplate{footline}[frame number]{}
+	\end{frame}
+	
+	\begin{frame} 
+		\frametitle{Sumário}  
+		\tableofcontents
+	\end{frame}
+	
+
+	\section{Cesta Básica} % Indicação do Sumário
+	\begin{frame}{Cesta Básica}
+	\begin{itemize}
+		\item \Large{Decreto Lei n$^{\circ}$ 399 de 1938}
+		\item \Large{Produtos}
+		\item \Large{Salário Mínimo}
+		\item \Large{Variação de Preço}
+		\item \Large{Sobreviver/Vida Digna}
+		\item \Large{DIESSE}
+		\item \Large{Cálculo do Valor da Cesta Básica}
+
+		
+	\end{itemize}
+	\end{frame}
+	
+	\section{Projetos Relacionados}
+	\begin{frame}{Projetos Relacionados}
+		\begin{itemize}
+			\item \Large{DIESSE}
+			\item \Large{PROCON}
+			\item \Large{FAHOR e UESC}
+			\item \Large{Cesta Básica Brusque}
+		\end{itemize}
+	\end{frame}
+
+	\section{Estrutura Atual dos Dados}
+\begin{frame}{Estrutura Atual dos Dados}
+\begin{itemize}
+	\item \Large{Coleta dos dados}
+	\item \Large{Lista de Produtos}
+	\item \Large{Armazenamento em Planilha}
+	\item \Large{Divulgação}
+\end{itemize}
+\end{frame}
+
+	\section{Desenvolvimento Web}
+\begin{frame}{Desenvolvimento Web}
+\begin{itemize}
+	\item \Large{Django}
+	\item \Large{Banco de Dados Relacional}
+	\item \Large{Facilitação na coleta de dados}
+	\item \Large{Divulgação facilitada}
+\end{itemize}
+\end{frame}
+
+	\section{Protótipo}
+\begin{frame}{Protótipo (Versão Beta)}
+	\begin{figure}[!h]
+	\begin{center}
+		\includegraphics[width=12.0cm, height= 7.0cm]{cestauser.jpeg}    % The printed column width is 8.4 cm.
+	%	\caption{Tela de para visualização dos dados para os usuários} 
+		\label{fig:faces}
+	\end{center}
+\end{figure}
+\end{frame}
+
+	\section{Desenvolvimento Móvel}
+\begin{frame}{Desenvolvimento Móvel}
+
+\begin{columns}
+	\begin{column}{0.5\textwidth}
+	\begin{itemize}
+		\item \Large{S.O. (Android \& iOS)}
+		\item \Large{Flutter}
+		\item \Large{Divulgação Off-line}
+	\end{itemize}
+	\end{column}
+	\begin{column}{0.5\textwidth}  %%<--- here
+		\begin{center}
+			\includegraphics[width=0.67\textwidth]{movel.jpeg}
+		\end{center}
+	\end{column}
+\end{columns}
+\end{frame}
+
+	\section{Cronograma}
+\begin{frame}{Cronograma}
+\begin{table}[h]
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		Atividade                             & Ago & Set & Out & Nov & Dez \\
+		\hline
+		Conclusão da Aplicação Web            & X      & X        &         &          &          \\
+		\hline
+		Liberação da Aplicação Web &        & X        &         &          &          \\
+		\hline
+		Desenvolvimento do Aplicativo          &        & X        & X       & X        &          \\
+		\hline
+		Liberação do Aplicativo &        &          &         & X        &          \\
+		\hline
+		Integração, teste e correções         &        & X        &         & X        & X        \\
+		\hline
+		Revisão bibliográfica                 & X      & X        & X       & X        & X        \\
+		\hline
+		Redação da Monografia                 &        &          & X       & X        & X       \\
+		\hline
+	\end{tabular}
+%	\caption{Cronograma}
+\end{table}
+\end{frame}
+
+	\section{Bibliografia}
+\begin{frame}{Bibliografia}
+
+\end{frame}
+
+	\begin{frame}[plain,noframenumbering] 
+\titlepage
+\setbeamertemplate{footline}[frame number]{}
+\end{frame}
+
+\end{document}
