@@ -1,0 +1,9 @@
+\babel@toc {brazil}{}
+\beamer@sectionintoc {1}{Cesta B\'asica}{3}{0}{1}
+\beamer@sectionintoc {2}{Projetos Relacionados}{4}{0}{2}
+\beamer@sectionintoc {3}{Objetivos}{5}{0}{3}
+\beamer@sectionintoc {4}{Desenvolvimento Web}{6}{0}{4}
+\beamer@sectionintoc {5}{Prot\'otipo}{7}{0}{5}
+\beamer@sectionintoc {6}{Desenvolvimento M\'ovel}{8}{0}{6}
+\beamer@sectionintoc {7}{Cronograma}{9}{0}{7}
+\beamer@sectionintoc {8}{Bibliografia}{10}{0}{8}
