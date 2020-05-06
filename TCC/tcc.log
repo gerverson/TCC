@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.27)  15 JAN 2020 10:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.27)  20 JAN 2020 09:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -985,6 +985,24 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks28
 \@floatcapt=\box31
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip264
+\LTright=\skip265
+\LTpre=\skip266
+\LTpost=\skip267
+\LTchunksize=\count171
+\LTcapwidth=\dimen158
+\LT@head=\box32
+\LT@firsthead=\box33
+\LT@foot=\box34
+\LT@lastfoot=\box35
+\LT@cols=\count172
+\LT@rows=\count173
+\c@LT@tables=\count174
+\c@LT@chunks=\count175
+\LT@p@ftn=\toks29
+)
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
@@ -995,20 +1013,20 @@ Package: backref 2016/05/21 v1.39 Bibliographical back referencing
 Package: abntex2cite 2016/02/26 v-1.9.6 abnTeX2
 
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
-\minimumbiblabelwidth=\skip264
-\ABCIauxlen=\skip265
-\c@ABCIaux=\count171
-\c@ABCImax=\count172
+\minimumbiblabelwidth=\skip268
+\ABCIauxlen=\skip269
+\c@ABCIaux=\count176
+\c@ABCImax=\count177
 
 (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\biblabelsep=\skip266
+\biblabelsep=\skip270
 LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
-\ABCItoken=\toks29
+\ABCItoken=\toks30
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 126.
+Package hyperref Info: Option `colorlinks' set `false' on input line 90.
 \tcc@idxfile=\write4
 \openout4 = `tcc.idx'.
 
@@ -1018,29 +1036,42 @@ Writing index file tcc.idx
 LaTeX Warning: Unused global option(s):
     [english,brazilian].
 
-(./tcc.aux)
+(./tcc.aux
+
+LaTeX Warning: Label `fig:faces' multiply defined.
+
+
+LaTeX Warning: Label `fig:faces' multiply defined.
+
+
+LaTeX Warning: Label `fig:faces' multiply defined.
+
+
+LaTeX Warning: Label `fig:faces' multiply defined.
+
+)
 \openout1 = `tcc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 143.
-LaTeX Font Info:    ... okay on input line 143.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 143.
-LaTeX Font Info:    ... okay on input line 143.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 143.
-LaTeX Font Info:    ... okay on input line 143.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 143.
-LaTeX Font Info:    ... okay on input line 143.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 143.
-LaTeX Font Info:    ... okay on input line 143.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 143.
-LaTeX Font Info:    ... okay on input line 143.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 143.
-LaTeX Font Info:    ... okay on input line 143.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 143.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 107.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
-\AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 143.
+\AtBeginShipoutBox=\box36
+Package hyperref Info: Link coloring OFF on input line 107.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1048,29 +1079,29 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count173
+\c@section@level=\count178
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 143.
-LaTeX Info: Redefining \ref on input line 143.
-LaTeX Info: Redefining \pageref on input line 143.
-LaTeX Info: Redefining \nameref on input line 143.
-\myptabbox=\box33
-\myptabboxwidth=\skip267
+LaTeX Info: Redefining \nameref on input line 107.
+LaTeX Info: Redefining \ref on input line 107.
+LaTeX Info: Redefining \pageref on input line 107.
+LaTeX Info: Redefining \nameref on input line 107.
+\myptabbox=\box37
+\myptabboxwidth=\skip271
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count174
-\scratchdimen=\dimen158
-\scratchbox=\box34
-\nofMPsegments=\count175
-\nofMParguments=\count176
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count177
-\MPscratchDim=\dimen159
-\MPnumerator=\count178
-\makeMPintoPDFobject=\count179
-\everyMPtoPDFconversion=\toks31
+\scratchcounter=\count179
+\scratchdimen=\dimen159
+\scratchbox=\box38
+\nofMPsegments=\count180
+\nofMParguments=\count181
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count182
+\MPscratchDim=\dimen160
+\MPnumerator=\count183
+\makeMPintoPDFobject=\count184
+\everyMPtoPDFconversion=\toks32
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1088,7 +1119,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 143.
+LaTeX Info: Redefining \microtypecontext on input line 107.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1105,19 +1136,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 <logo.png, id=4, 2007.5pt x 2689.04625pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 154.
+Package pdftex.def Info: logo.png  used on input line 118.
 (pdftex.def)             Requested size: 28.45274pt x 38.07721pt.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 154.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 118.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 158.
+Package pdftex.def Info: logo.png  used on input line 122.
 (pdftex.def)             Requested size: 28.45274pt x 38.07721pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 158.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 122.
 
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
@@ -1127,35 +1158,35 @@ File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 158.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 122.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 158
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 122
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 158
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 122
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 158.
+(Font)              <12> on input line 122.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 158.
+(Font)              <8> on input line 122.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 158.
+(Font)              <6> on input line 122.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.158 
+l.122 
        [1
 
 
@@ -1168,7 +1199,7 @@ l.158
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 218.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 182.
  [4
 
 ] [5
@@ -1180,7 +1211,7 @@ Package babel Warning: Unknown language `english'. Either you have
 (babel)                or you requested it in a previous run. Fix its name,
 (babel)                install it or just rerun the file, respectively.
 (babel)                I'll proceed, but expect wrong results.
-(babel)                Reported on input line 237.
+(babel)                Reported on input line 201.
 
 [6
 
@@ -1191,32 +1222,103 @@ Package babel Warning: Unknown language `english'. Either you have
 ] [9
 
 
-] (./tcc.toc
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 31.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 31.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 31.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 31.
-) [10
+] (./tcc.toc) [10
 
 ] [11
 
 
-] [12] [13
-
-]
+] [12] [13]
 [14
 
-] [15
+]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 320.
+ [15] [16]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 366.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 366.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 366.
+ [17] [18]
+Underfull \vbox (badness 10000) detected at line 419
+ []
 
-] (./tcc.bbl (./tcc.brf)
+[19
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 462--462
+ [][] [][][]\T1/phv/m/n/10 (+20) https://www.portal.ap.gov.br/noticia/1104/proc
+on-divulga-pesquisa-de-precos-da-cesta-basica-em-
+ []
+
+[20]
+<cestadiagrama.png, id=258, 1078.0275pt x 501.875pt>
+File: cestadiagrama.png Graphic file (type png)
+<use cestadiagrama.png>
+Package pdftex.def Info: cestadiagrama.png  used on input line 487.
+(pdftex.def)             Requested size: 455.25232pt x 256.08304pt.
+ [21pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.495 
+       <./cestadiagrama.png>] [22]
+<cestaadmin.png, id=269, 739.76375pt x 538.01pt>
+File: cestaadmin.png Graphic file (type png)
+<use cestaadmin.png>
+Package pdftex.def Info: cestaadmin.png  used on input line 509.
+(pdftex.def)             Requested size: 455.25113pt x 199.1673pt.
+<cestacadastro.png, id=270, 1041.8925pt x 522.95375pt>
+File: cestacadastro.png Graphic file (type png)
+<use cestacadastro.png>
+Package pdftex.def Info: cestacadastro.png  used on input line 521.
+(pdftex.def)             Requested size: 455.23863pt x 227.62668pt.
+ [23
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.527 
+       <./cestaadmin.png>]
+<cestauser.jpeg, id=277, 1556.81625pt x 841.64438pt>
+File: cestauser.jpeg Graphic file (type jpg)
+<use cestauser.jpeg>
+Package pdftex.def Info: cestauser.jpeg  used on input line 534.
+(pdftex.def)             Requested size: 455.24222pt x 227.61945pt.
+ [24pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.543 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.543 
+       <./cestacadastro.png> <./cestauser.jpeg>]
+<cestadispositovos.jpeg, id=284, 412.54124pt x 319.94531pt>
+File: cestadispositovos.jpeg Graphic file (type jpg)
+<use cestadispositovos.jpeg>
+Package pdftex.def Info: cestadispositovos.jpeg  used on input line 546.
+(pdftex.def)             Requested size: 341.43974pt x 227.62654pt.
+ [25pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.560 \chapter
+              {Considerações finais} <./cestadispositovos.jpeg>] (./tcc.bbl
+(./tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
- [16
+ [26
 
 ]
 
@@ -1224,33 +1326,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-) [17
+[27
 
 ]
+Overfull \hbox (20.79826pt too wide) in paragraph at lines 157--157
+\T1/phv/m/n/12 (-20) desenvolvendo-[]sua-[]primeira-[]aplicacao-[]movel-[]multi
+plataforma-[]revista-[]mobile-[]magazine-[]46 / 
+ []
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 355.
-
-[18
-
-
-] [19
-
-] [20
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 373.
-
-[21
-
-
-] [22
-
-] [23
-
-]
+) [28]
 \tf@lof=\write6
 \openout6 = `tcc.lof'.
 
@@ -1260,35 +1344,39 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 \tf@toc=\write8
 \openout8 = `tcc.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 610.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 610.
  (./tcc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 384.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 610.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 610.
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: A540FF23C9BAFBEBFF55725F396AAC4E;176.
+(rerunfilecheck)             Checksum: 25876DB68D5529E1C7A7A4F9485288B8;1317.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 384.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 610.
  ) 
 Here is how much of TeX's memory you used:
- 13004 strings out of 492982
- 192012 string characters out of 6134896
- 342907 words of memory out of 5000000
- 16212 multiletter control sequences out of 15000+600000
- 53005 words of font info for 115 fonts, out of 8000000 for 9000
+ 13458 strings out of 492982
+ 200072 string characters out of 6134896
+ 361704 words of memory out of 5000000
+ 16528 multiletter control sequences out of 15000+600000
+ 59194 words of font info for 172 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,12n,38p,421b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/helvetic/uhvro8a.pfb>
-Output written on tcc.pdf (24 pages, 148128 bytes).
+ 44i,13n,38p,667b,590s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
+hare/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/typ
+e1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
+helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhv
+ro8a.pfb>
+Output written on tcc.pdf (29 pages, 583201 bytes).
 PDF statistics:
- 289 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
- 67 named destinations out of 1000 (max. 500000)
- 27870 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 461 PDF objects out of 1000 (max. 8388607)
+ 409 compressed objects within 5 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 28407 words of extra memory for PDF output out of 29859 (max. 10000000)
 
