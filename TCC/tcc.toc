@@ -18,7 +18,7 @@
 \contentsline {section}{\numberline {2.1}Cesta B\IeC {\'a}sica}{14}{section.2.1}
 \contentsline {section}{\numberline {2.2}Desenvolvimento de Sistemas Para Internet}{14}{section.2.2}
 \contentsline {section}{\numberline {2.3}Django}{15}{section.2.3}
-\contentsline {section}{\numberline {2.4}Sistemas Operacionais M\IeC {\'o}veis e Aplicativos H\IeC {\'\i }brido}{15}{section.2.4}
+\contentsline {section}{\numberline {2.4}Sistemas Operacionais M\IeC {\'o}veis e Aplicativos H\IeC {\'\i }brido}{16}{section.2.4}
 \contentsline {section}{\numberline {2.5}Flutter}{17}{section.2.5}
 \contentsline {section}{\numberline {2.6}Trabalhos Relacionados}{18}{section.2.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }

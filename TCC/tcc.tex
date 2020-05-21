@@ -50,7 +50,7 @@ abnt-repeated-author-omit = yes % autores com + de uma entrada recebem '____.'
 \instituicao{
 	Instituto Federal de Educação, Ciência e Tecnologia do Tocantins - IFTO\\
 	Campus Paraíso do Tocantins\\
-	Curso Superior em Bacharelado em Sistemas de Informação
+	Curso Superior de Bacharelado em Sistemas de Informação
 }
 
 \tipotrabalho{TCC}
@@ -164,7 +164,7 @@ abnt-repeated-author-omit = yes % autores com + de uma entrada recebem '____.'
 % AGRADECIMENTOS
 % ------------------------------------------------------------------------------
 \begin{agradecimentos}
-	Folha em que o autor faz agradecimentos àqueles que contribuíram de maneira relevante para a realização do TCC...
+Agradeço a todos que me ajudaram a concluir esse curso, principalmente meus pais que me apoiaram desde o início. Agradeço aos meus professores que me ensinaram o que eu precisava e aos meus colegam que tiram varias duvidas. Agradeço também ao IFTO e seus funcionários por proporcionar o ambiente para que pudesse desenvolver minhas atividades.
 \end{agradecimentos}
 
 
@@ -175,10 +175,8 @@ abnt-repeated-author-omit = yes % autores com + de uma entrada recebem '____.'
 	\vspace*{\fill}
 	\begin{flushright}
 		\textit{
-			``Folha em que o autor apresenta uma citação,\\
-			seguida da indicação da autoria, relacionada com a\\
-			matéria tratada no corpo do trabalho.``\\
-			(Nome do autor)
+			``Falarmos em educação sem enfatizar boa alimentação,\\ é como tentar decidir os rumos de um veículo sem combustível.``\\
+			Paulo Celente
 		}
 	\end{flushright}
 \end{epigrafe}
@@ -191,18 +189,19 @@ abnt-repeated-author-omit = yes % autores com + de uma entrada recebem '____.'
 
 % Resumo em português
 \begin{resumo}
-	Apresentação concisa dos pontos relevantes do TCC, fornecendo uma visão rápida e clara dos objetivos, dos procedimentos metodológicos e das conclusões do trabalho.
+	A alimentação é uma necessidade que todas as pessoas necessitam e numa sociedade moderna a maioria dos produtos alimentícios são comprados em supermercados, o preço desses produtos impacta diretamente em quanto as pessoas conseguem comprar de alimentos para as famílias, isso levanta questões de quanto as pessoas precisam ganhar para comprar sua alimentação e se seu salário é suficiente para suas necessidades. Esse trabalho focou no desenvolvimento de um sistema e um aplicativo que fornecesse os dados da cesta básica de Paraíso do Tocantins, onde era feito a coleto dos dados, mais não havia um sistema para torna esses dados disponíveis para consulta pública.
 	
-	\textbf{Palavras-chave}: pc1, pc2, pc3 ...
+	\textbf{Palavras-chave}: Cesta Básica, Django, Flutter
 \end{resumo}
 
 % resumo em inglês (Abstract)
 \begin{resumo}[Abstract]
 	\begin{otherlanguage*}{english}
-		English abstract version.
+		
+		Food is a necessity that everyone needs and in a modern society most food products are bought in supermarkets, the price of these products directly impacts how much people are able to buy food for families, this raises questions about how much people need earn to buy your food and if your salary is sufficient for your needs. This work focused on the development of a system and an application that would provide data from the basic basket of Paraíso do Tocantins, where the data was collected, but there was no system to make these data available for public consultation.
 		
 		\noindent 
-		\textbf{Keywords}: kw1. kw2. kw ...
+		\textbf{Keywords}: Basic Basket, Django, Flutter
 	\end{otherlanguage*}
 \end{resumo}
 
@@ -227,8 +226,13 @@ abnt-repeated-author-omit = yes % autores com + de uma entrada recebem '____.'
 % ------------------------------------------------------------------------------
 % Edite a lista de siglas conforme o modelo abaixo
 \begin{siglas}
-	\item[IBGE]{Instituto Brasileiro de Geografia e Estatística}
-	\item[IFTO]{Instituto Federal do Tocantins}
+	%	\item[IBGE]{Instituto Brasileiro de Geografia e Estatística}
+	\item[IFTO]{Instituto Federal de Educação, Ciência e Tecnologia do Tocantins}
+	\item[DIEESE]{Departamento Intersindical de Estatística e Estudos Socioeconômicos}
+	\item[SDK]{Kit de Desenvolvimento de Software}
+	\item [API]{Interface de Programação de Aplicativos}
+	\item[CRUD]{Criação, Consulta, Atualização e Destruição de Dados}
+	\item[PROCON]{Programa de Proteção e Defesa do Consumidor}
 	% Incluir as siglas aqui ...
 \end{siglas}
 
@@ -304,16 +308,20 @@ Quando já tiver dados estruturados e relacionais possibilita-se futuramente uti
 	\section{Cesta Básica}
 O termo cesta básica se refere há um conjunto de produtos alimentícios que um trabalhador adulto precisa consumir para se manter biologicamente e socialmente, sendo importante para avaliação do desenvolvimento socioeconômico de uma localidade. Com a cesta básica pode se avaliar o salário mínimo e entender comportamento do poder de compra, sendo que o salário mínimo constitucional deve atender às necessidades que os trabalhadores e suas famílias precisam para se manter na sociedade \cite{araujo2007impacto}.
 
+A cesta básica foi instituída por meio de decreto federal, que teve por objetivo fazer uma correlação entre quanto os trabalhadores estão ganhando e o custo de vida alimentar. O cálculo da cesta básica é importante para saber se o salário mínimo é suficiente para que um trabalhador possa manter sua família alimentada.
+
 \section{Desenvolvimento de Sistemas Para Internet}
-A Internet é a mídia mais promissora atualmente, a distância geográfica hoje não é mais um problema para se transmitir informação, sendo acessível para ricos e pobres, seu custo de criação e divulgação de conteúdo é extremamente mais baixo, tornando a internet um lugar atrativo para divulgar conteúdo \cite{moran1997utilizar}.
+A Internet é a mídia mais promissora atualmente, a distância geográfica hoje não é mais um problema para se transmitir informação, sendo acessível para ricos e pobres, seu custo de criação e divulgação de conteúdo é extremamente mais baixo, tornando a internet um lugar atrativo para divulgar conteúdo \cite{moran1997utilizar}. A internet também possibilita distribuir informações de forma fácil e quase em tempo real, isso faz da internet hoje o meio mais utilizado para disseminar informações.
 
 Com a internet pode-se acessar uma enorme quantidade de informações que estão disponíveis em todo o mundo, pois pode ser considerada a mais completa, abrangente e complexa ferramenta de aprendizado do mundo. Com a internet pode se pesquisar e discutir várias fontes de informação e diferentes áreas do conhecimento \cite{garcia2002internet}.
 
 A tecnologia \textit{Web} funciona como uma forma de repositório de documentos eletrônicos que ficam armazenados em vários servidores, tanto os cliente como os servidores são ligados a rede mundial de computadores, também chamado de internet. O conteúdo presente na rede pode ser visualizado por qualquer dispositivo que possa se conectar à rede, onde páginas \textit{Web} se interligam umas às outras, assim criando uma rede de informação \cite{junior2009sistemas}.
 
-O processo para desenvolvimento de um sistema \textit{Web} não pode ser considerado algo trivial, pois envolve analisar e compreender determinado problema, devem ser incorporados vários aspectos para que ele possa ser acessado de forma remota e segura no navegador \cite{miletto2014desenvolvimento}.
+O processo para desenvolvimento de um sistema \textit{Web} não pode ser considerado algo trivial, pois envolve analisar e compreender determinado problema, devem ser incorporados vários aspectos para que ele possa ser acessado de forma remota e segura no navegador \cite{miletto2014desenvolvimento}. O desenvolvimento de um sistema \textit{Web} pode falhar se não houver um planejamento adequado, antes de começar a programar é necessário entender o problema a ser resolvido, pois, caso o problema não tenha sido entendido pode ser necessário fazer correções que podem gerar muito trabalho não planejado.
 
 Ao desenvolver uma aplicação que realize tarefas repetitivas ou que são comuns a vários sistemas é recomendado a utilização de um framework, pois assim evita-se de perder tempo montando e testando um sistema para validação de dados se existe uma ferramenta que já faz isso, além de uma comunidade que contribui para o aumento da segurança e da estabilidade \cite{OqueeumF24:online}.
+
+Os frameworks são amplamente utilizado atualmente, vários frameworks são desenvolvidos com objetivos de facilitar diferentes atividades de programação, por ter vários tipos de frameworks diferentes pode se escolher aquele que achar mais apropriado para o projeto. A desvantagem dos frameworks está no fato de que eles possuem estruturas de programação bem definidas e que devem ser seguidas, o que necessita de pessoas que tenham um conhecimento bem específico da ferramenta.
 
 
 \section{Django}
@@ -351,15 +359,13 @@ O Flutter é um framework lançado pela Google, sendo recente no mercado, no ent
 
 O SDK do Flutter converte as aplicações para código nativo, permitindo assim criar aplicativos para dispositivos móveis com interfaces nativas de alta qualidade no iOS e Android, foi projetado para que os desenvolvedores possa desenvolver em tempo recorde, sendo gratuito e de código aberto \cite{flutterf54:online}.
 
-O diferencial do Flutter no desenvolvimento é sua forma de criar os aplicativos, pois o Flutter não utiliza os widgets fornecidos pelo dispositivos, em vez disso ele utiliza o seu próprio mecanismo de renderização de alto desempenho para desenhar widgets \cite{corazza2018aplicativo}.
+O diferencial do Flutter no desenvolvimento é sua forma de criar os aplicativos, pois o Flutter não utiliza os componentes fornecidos pela plataforma, em vez disso ele utiliza o seu próprio mecanismo de renderização de alto desempenho para desenhar seus próprios componentes. 
 
 Sua estrutura fornece para que os designers uma visão que permite uma grande liberdade sem limitações, com isso pode se criar aplicativos com o máximo de criatividade. Seus recursos de composição permitem sobrepor e animar gráficos, vídeo, texto e controles sem limitação, proporcionando uma experiência com pixels perfeitos no iOS e no Android \cite{flutterf54:online}.
 
 Dart é uma linguagem de programação desenvolvida pela Google projetada para ser forma estruturada, orientada a objetos e flexível. Foi projeto para ter uma sintaxe familiar e natural para os programadores, sendo fácil de aprender e sintaxe familiar com linguagem como Java e C++ \cite{DartNova22:online}.
 
-
-
-O DART foi criado com o objetivo de substituir o JavaScript como uma linguagem para desenvolvimento \textit{Web} de plataforma aberta, foi pensado para resolver os problemas que o JavaScript apresenta, oferecendo mais facilidade e segurança para o desenvolvimento de projetos de grande escala \cite{Linguage47:online}.
+O desenvolvimento de aplicativos com o framework flutter ainda está se estabelecendo no mercado, mas já se tornou um dos principais frameworks para desenvolvimento, sua facilidade de programar e seus resultados satisfatórios estão tornando o framework bastante conhecido e usado quando se pensa em programar aplicativos.
 
 
 \section{Trabalhos Relacionados}
@@ -411,7 +417,7 @@ Para começar o projeto foi um levantamento de todos os dados já levantados da 
 	\hline
 	Macarrão          & 500 g              & 0,5             \\
 	\hline
-	Ovos              & 8 unid.            & 0,67            \\
+	Ovos              & 8 unid.            & 8            \\
 	\hline
 	Frango            & 1,2 Kg             & 1,2             \\
 	\hline
@@ -425,13 +431,13 @@ Para começar o projeto foi um levantamento de todos os dados já levantados da 
 	\hline
 	\multicolumn{3}{|c|}{HIGIENE PESSOAL}                      \\
 	\hline
-	Papel higiênico   & 80 M               & 0,812           \\
+	Papel higiênico   & 80 M               & 80           \\
 	\hline
 	Creme dental      & 90 g               & 0,09            \\
 	\hline
 	Sabonete          & 225 g              & 0,225           \\
 	\hline
-	Absorvente        & 10 Unid.           & 0,8             \\
+	Absorvente        & 10 Unid.           & 10             \\
 	\hline
 	Desodorante spray & 150 mL             & 0,15            \\
 	\hline
@@ -453,7 +459,7 @@ Para começar o projeto foi um levantamento de todos os dados já levantados da 
 	\hline
 	Fósforos          & 3 Caixa            & 0,3             \\
 	\hline
-	Gás de cozinha    & 5.2 Kg             & 2,5       \\
+	Gás de cozinha    & 5,2 Kg             & 5,2       \\
 	\hline     
 	%		\end{tabular}
 	\caption{Lista de Produtos Pesquisados}
@@ -485,7 +491,7 @@ Tendo em vista que o sistema deveria ser mais amigável  possível para os usuá
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=16.0cm, height= 9.0cm]{cestadiagrama.png}    % The printed column width is 8.4 cm.
-		Fonte:Autor
+		Fonte: Autor
 		\caption{Diagrama de Entidade e Relacionamento.} 
 		
 		\label{fig:faces}
@@ -507,7 +513,7 @@ O Django possui uma estrutura bem simples de utilização, criando o arquivo de 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=16.0cm, height= 7.0cm]{cestaadmin.png}    % The printed column width is 8.4 cm.
-		Fonte:Autor
+		Fonte: Autor
 		\caption{Tela administrador do Django.} 
 		\label{fig:faces}
 	\end{center}
@@ -519,7 +525,7 @@ Para quem faz a pesquisa de preço foi programado um módulo que facilite, de fo
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=16.0cm, height= 8.0cm]{cestacadastro.png}    % The printed column width is 8.4 cm.
-		Fonte:Autor
+		Fonte: Autor
 		\caption{Tela de Registro de Preços Pesquisados} 
 		\label{fig:faces}
 	\end{center}
@@ -527,39 +533,57 @@ Para quem faz a pesquisa de preço foi programado um módulo que facilite, de fo
 
 Para o Layout do visitante foi planejado um template amigável e responsivo de forma que pudesse se adaptar a qualquer resolução de tela.
 
-O protótipo do sistema está disponível em: http://gerverson.pythonanywhere.com
-Usuário: gerverson Senha: 123
+
 \begin{figure}[!h]
 	\begin{center}
 		\includegraphics[width=16.0cm, height= 8.0cm]{cestauser.jpeg}    % The printed column width is 8.4 cm.
-		Fonte:Autor
+		Fonte: Autor
 		\caption{Tela para visualização dos dados para os usuários} 
 		\label{fig:faces}
 	\end{center}
 \end{figure}
 
-Após a conclusão final da versão \textit{Web} do sistema será iniciado a criação do aplicativo, a proposta da criação é para que se possa ter esses dados mesmo sem internet e através da câmera do dispositivo ser capaz de ler o código de barras do produto localizá-lo suas informações.
-Para que se possa desenvolver o aplicativo será necessário criar uma API dentro do framework Django, no entanto ele já oferece suporte para criação de forma simplificada.
+O sistema \textit{Web} foi hospedado dendo dos servidores do IFTO, no projeto foi escolhido o SQLite para ser o banco de dados, no entanto, a hospedagem oferecida no servidor foi o MySql, algumas modificações tiveram que serem feitam para adaptar-se ao banco, mais por ambos serem bancos de dados relacionais não houve impacto no projeto e foi hospedado com sucesso.
+
+Após a conclusão do sistema \textit{Web} foi dado início ao planejamento do aplicativo, a proposta do aplicativo é que ele possa ser usado mesmo sem internet, então foi feito o desenvolvimento de uma API no sistema \textit{Web} para que o aplicativo possa baixa os dados e salvar localmente no dispositivo do usuário.
+
+Para fazer o desenvolvimento do aplicativo foi escolhido o framework Flutter, pois ele permitir desenvolver em linguagem nativa tanto para Android e iOS. Devido aos alto custo para colocar o aplicativo na \textit{Apple Store} foi decidido não lançar o aplicativo para essa plataforma, apenas foi lançado o aplicativo para Android na \textit{Play Store}.
 
 \begin{figure}[!h]
 	\begin{center}
-		\includegraphics[width=12.0cm, height= 8.0cm]{cestadispositovos.jpeg}    % The printed column width is 8.4 cm.
-		Fonte:Autor
-		\caption{Demonstração do sistema \textit{Web} rodando em dispositivos móveis} 
+		\includegraphics[width=12.0cm, height= 8.0cm]{movel.png}    % The printed column width is 8.4 cm.
+		
+		Fonte: Autor
+		\caption{Demonstração do sistema \textit{Web} rodando em dispositivo móvel e a interface principal do aplicativo.} 
 		\label{fig:faces}
 	\end{center}
 \end{figure}
 
-%A tecnologia escolhida para o desenvolvimento é o Flutter, pois é uma framework que permite desenvolvimento multiplataforma, assim irá permitir que tanto os usuários do Android e iOS possam utilizar.
-Para fazer o desenvolvimento do aplicativo foi escolhido o framework Flutter, pois sua característica de permitir desenvolver em linguagem nativa tanto para Android e iOS foi o fator decisivo na escolha, nenhum outro framework de desenvolvimento móvel lançado até esse momento oferece esse recurso. Seus principais concorrentes utilizam máquina virtual como intermediário para se comunicar com o sistema operacional ou para utilizar determinados recursos precisam de código nativo, neste caso é necessário partes de código diferentes para cada sistema operacional.
-
-O Flutter apesar de recente no mercado tem se debatido na comunidade que se tornará uma das principais ferramentas para o desenvolvimento móvel futuramente, apesar de que sua comunidade de desenvolvimento ainda está iniciando, ele gradativamente vem ganhando o interesse de desenvolvedores.
-
-Ainda não foi iniciado o desenvolvimento do aplicativo, pois antes de iniciar o desenvolvimento móvel será concluído a versão \textit{Web}, pois o aplicativo precisa que a versão \textit{Web} esteja em funcionamento para que ele possa receber os dados que serão exibidos.
+O aplicativo foi desenvolvido utilizando um \textit{layout} diferente do sistema \textit{Web}, o aplicativo foi planejado para ser mais simples, e foram deixados fora varias funções que não são necessárias para os usuários, o aplicativo apenas permite ver o histórico da Cesta Básica e dos produtos em forma de tabela.
 
 \chapter{Considerações finais}
+No início desse projeto houve várias discussões sobre os meios que seriam utilizados para se alcançar o
+resultado, o resultado que era esperado foi definido no início do projeto, no entanto, os meios para atingir os
+resultados foram planejados depois que começou o projeto através de várias discussões sobre quais deveriam ser as
+melhores práticas e ferramentas para o desenvolvimento.
 
-	Parte final do texto na qual são apresentadas as considerações finais acerca dos objetivos, das variáveis e do problema da pesquisa. Não usar esta seção para sumarizar os resultados (o que já foi feito no Resumo), mas destacar o progresso e as aplicações que o trabalho propicia. Enfatizar as limitações que persistem, apresentando, sempre que apropriado, sugestões para trabalhos futuros.
+Houve a necessidade por parte do desenvolvedor de aprender a utilização dos frameworks Django e Flutter que ainda
+não era do seu conhecimento, mas isso não foi um grande empecilho para o projeto, pois o tempo de duração do
+projeto era suficiente para aprendizado das ferramentas e o desenvolvimento, as outras ferramentas utilizadas já eram
+de conhecimento do desenvolvedor e apenas alguns detalhes a mais tiveram que ser buscado para o
+desenvolvimento.
+
+Não foi um objetivo deste trabalho analisar os dados coletados da cesta básica, esse trabalho foi focado
+apenas no desenvolvimento das plataformas, a análise dos dados será proposta para os alunos, a inserção e atualização de novos dados ficará de responsabilidade dos alunos do
+curso de administração. Devido a falta de voluntários para a coleta dos dados, houve uma pausa no projeto em julho de 2019 e até dessa publicação ainda não houve retorno na coleta dos dados.
+
+Pode-se dizer que o sistema e o aplicativo proposto nesse trabalho foi alcançado, apesar de que ainda podem ser
+melhorados, o objetivo principal que embasa o sistema foi concluído, novas funções podem ser adicionadas para
+torná-lo ainda mais eficiente.
+
+O sistema apesar de em seu escopo foi definido para apenas Paraíso do Tocantins, sua base do banco de
+dados permite uma expansão para outras cidades, a proposta futura desse projeto é uma expansão de sua atuação
+para mais localidades.
 
 % Finaliza o bookmarking do PDF
 \phantompart
