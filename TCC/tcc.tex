@@ -63,7 +63,7 @@ abnt-repeated-author-omit = yes % autores com + de uma entrada recebem '____.'
 	apresentado como requisito parcial para
 	obtenção do Título de Bacharelado do Curso Superior
 	de Sistemas de Informação do Instituto Federal do Tocantins,
-	Campus Paraíso do Tocantins
+	\textit{Campus} Paraíso do Tocantins
 }
 % ---
 
@@ -231,7 +231,7 @@ A alimentação é uma necessidade que todas as pessoas precisam para sobreviver
 	\item[DIEESE]{Departamento Intersindical de Estatística e Estudos Socioeconômicos}
 	\item[SDK]{Software Development Kit (Kit de Desenvolvimento de Software)}
 	\item [API]{Application Programming Interface (Interface de Programação de Aplicativos)}
-	\item[CRUD]{Criação, Consulta, Atualização e Destruição de Dados}
+	\item[CRUD]{Create, Read, Update and Delete (Criação, Consulta, Atualização e Destruição de Dados)}
 	\item[PROCON]{Programa de Proteção e Defesa do Consumidor}
 	% Incluir as siglas aqui ...
 \end{siglas}
@@ -256,7 +256,7 @@ A aquisição de produtos essenciais para o consumo humano é de suma importânc
 
 O mercado tem uma alta variação de preço dos produtos, um estabelecimento pode custar um determinado preço de um produto e um outro próximo pode custar o mesmo produto mais barato ou mais caro. O preço dos produtos influencia a vida da população, principalmente os trabalhadores que são os principais afetados, pois todos precisam de alimentos para sobreviver, e segundo nossas leis nacionais, o salário de um trabalhador tem que lhe proporcionar uma vida digna.
 
-As pesquisas de preço do valor da cesta básica vêm no sentido de avaliar o custo que está sendo pago pelos consumidores dos produtos essenciais, para gerar uma estatística de quanto as pessoas estão pagando em média por determinado produto em determinada cidade. Mesmo tendo os dados da pesquisa coletados eles não mostram muita relevância para a sociedade se não forem de conhecimento popular, pois o IFTO Campus Paraíso faz essa pesquisa, no entanto não tem uma forma de fazer a divulgação desses dados.
+As pesquisas de preço do valor da cesta básica vêm no sentido de avaliar o custo que está sendo pago pelos consumidores dos produtos essenciais, para gerar uma estatística de quanto as pessoas estão pagando em média por determinado produto em determinada cidade. Mesmo tendo os dados da pesquisa coletados eles não mostram muita relevância para a sociedade se não forem de conhecimento popular, pois o IFTO \textit{campus} Paraíso faz essa pesquisa, no entanto não tem uma forma de fazer a divulgação desses dados.
 
 Esse trabalho foi proposto como uma forma de disponibilizar para o população informações dos itens que compõem cesta básica de Paraíso do Tocantins, e como informações disponibilizadas na internet são de fácil acesso, esse foi o meio escolhido para a divulgação. Para que fosse possível tornar mais prático e fácil tanto para quem coleta e para a população foi planejado o desenvolvimento de um sistema \textit{Web} e um aplicativo móvel para \textit{smartphones}, assim pode se atingir o maior número de consumidores para disseminar os dados da pesquisa.
 
@@ -561,6 +561,8 @@ Para fazer o desenvolvimento do aplicativo foi escolhido o \textit{framework} Fl
 \end{figure}
 
 O aplicativo foi desenvolvido utilizando um \textit{layout} diferente do sistema \textit{Web}, o aplicativo foi planejado para ser mais simples, e foram deixados fora varias funções que não são necessárias para os usuários, o aplicativo apenas permite ver o histórico da Cesta Básica e dos produtos em forma de tabela.
+
+O aplicativo pega os dados do servidor \textit{Web} através de uma API, após a primeira conexão do aplicativo ao servidor \textit{Web} os dados ficam armazenados no aplicativo, com os dados no aplicativo é possível acessá-los mesmo sem internet.
 
 \chapter{Considerações finais}
 No início desse projeto houve várias discussões sobre os meios que seriam utilizados para se alcançar o
