@@ -34,12 +34,6 @@ Acesso em: 06/05/2019.}
   Aplicadas, Departamento de Ci{\^e}ncias Cont{\'a}beis~…, v.~5, n.~2, p.
   68--85, 2013.}
 
-\bibitem[Borges 2012]{Linguage47:online}
-\abntrefinfo{Borges}{BORGES}{2012}
-{BORGES, L. \textbf{Linguagem Dart (Google)}. 2012.
-  \url{https://pt.slideshare.net/proflborges/linguagem-dart-google}.
-Acesso em: 06/05/2019.}
-
 \bibitem[CAMARGO 2010]{Sistemas41:online}
 \abntrefinfo{CAMARGO}{CAMARGO}{2010}
 {CAMARGO, C. \textbf{Sistemas operacionais móveis: qual a diferença?} 2010.
@@ -61,12 +55,6 @@ Acesso em: 06/05/2019.}
   2011.
   \url{http://blog.justdigital.com.br/dart-nova-linguagem-de-programacao-estruturada-da-google/}.
 Acesso em: 06/05/2019.}
-
-\bibitem[Corazza 2018]{corazza2018aplicativo}
-\abntrefinfo{Corazza}{CORAZZA}{2018}
-{CORAZZA, P.~V. Um aplicativo multiplataforma desenvolvido com flutter e nosql
-  para o cálculo da probabilidade de apendicite.
-2018.}
 
 \bibitem[DIEESE 2019]{metodolo8:online}
 \abntrefinfo{DIEESE}{DIEESE}{2019}
@@ -128,6 +116,10 @@ Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2009.}
   \url{https://www.cygnismedia.com/blog/developing-cross-platform-mobile-apps/}.
 Acesso em: 06/05/2019.}
 
+\bibitem[Milani 2007]{milani2007mysql}
+\abntrefinfo{Milani}{MILANI}{2007}
+{MILANI, A. \textbf{MySQL-guia do programador}. [S.l.]: Novatec Editora, 2007.}
+
 \bibitem[Miletto \& Bertagnolli 2014]{miletto2014desenvolvimento}
 \abntrefinfo{Miletto \& Bertagnolli}{MILETTO; BERTAGNOLLI}{2014}
 {MILETTO, E.~M.; BERTAGNOLLI, S. de C. \textbf{Desenvolvimento de Software II:
@@ -154,5 +146,12 @@ Acesso em: 06/05/2019.}
   multiplataforma}. 2013. Disponível em:
   \url{https://www.devmedia.com.br/desenvolvendo-sua-primeira-aplicacao-movel-multiplataforma-revista-mobile-magazine-46/27136}.
 Acesso em: 06/05/2019.}
+
+\bibitem[Tavares 2019]{OqueumS70:online}
+\abntrefinfo{Tavares}{TAVARES}{2019}
+{TAVARES, L. \textbf{O que é um Servidor Web (Web Server) - Melhor Hospedagem
+  de Sites}. 2019.
+  \url{https://www.melhoreshospedagemdesites.com/servidor-web/}.
+(Acesso em: 08/07/2020).}
 
 \end{thebibliography}

@@ -20,9 +20,11 @@
 \contentsline {section}{\numberline {2.3}Django}{15}{section.2.3}
 \contentsline {section}{\numberline {2.4}Sistemas Operacionais M\IeC {\'o}veis e Aplicativos H\IeC {\'\i }brido}{16}{section.2.4}
 \contentsline {section}{\numberline {2.5}Flutter}{17}{section.2.5}
-\contentsline {section}{\numberline {2.6}Trabalhos Relacionados}{18}{section.2.6}
+\contentsline {section}{\numberline {2.6}Banco de Dados e Mysql}{18}{section.2.6}
+\contentsline {section}{\numberline {2.7}Servidor \textit {Web}}{18}{section.2.7}
+\contentsline {section}{\numberline {2.8}Trabalhos Relacionados}{19}{section.2.8}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Metodologia}}{19}{chapter.3}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Metodologia}}{20}{chapter.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Desenvolvimento}}{23}{chapter.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }

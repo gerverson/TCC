@@ -49,7 +49,7 @@ abnt-repeated-author-omit = yes % autores com + de uma entrada recebem '____.'
 % Alterar o nome do campus e do curso, caso houver necessidade
 \instituicao{
 	Instituto Federal de Educação, Ciência e Tecnologia do Tocantins - IFTO\\
-	Campus Paraíso do Tocantins\\
+	\textit{Campus} Paraíso do Tocantins\\
 	Curso Superior de Bacharelado em Sistemas de Informação
 }
 
@@ -189,19 +189,19 @@ Agradeço a todos que me ajudaram a concluir esse curso, principalmente meus pai
 
 % Resumo em português
 \begin{resumo}
-	A alimentação é uma necessidade que todas as pessoas necessitam e numa sociedade moderna a maioria dos produtos alimentícios são comprados em supermercados, o preço desses produtos impacta diretamente em quanto as pessoas conseguem comprar de alimentos para as famílias, isso levanta questões de quanto as pessoas precisam ganhar para comprar sua alimentação e se seu salário é suficiente para suas necessidades. Esse trabalho focou no desenvolvimento de um sistema e um aplicativo que fornecesse os dados da cesta básica de Paraíso do Tocantins, onde era feito a coleto dos dados, mais não havia um sistema para torna esses dados disponíveis para consulta pública.
+A alimentação é uma necessidade que todas as pessoas precisam para sobreviver, numa sociedade moderna a maioria dos produtos alimentícios são comprados em supermercados, o preço desses produtos impacta diretamente em quanto as pessoas conseguem comprar de alimentos para as famílias, isso levanta questões de quanto as pessoas precisam ganhar para comprar sua alimentação e se seu salário é suficiente para suas necessidades. Esse trabalho focou no desenvolvimento de um sistema e um aplicativo que fornecesse o custo da cesta básica de Paraíso do Tocantins, onde um projeto do IFTO faz a pesquisa da cesta básica, mais não havia um sistema para torna esses dados disponíveis para consulta pública.
 	
-	\textbf{Palavras-chave}: Cesta Básica, Django, Flutter
+	\textbf{Palavras-chave}: Cesta Básica, Sistema Web, Aplicativo
 \end{resumo}
 
 % resumo em inglês (Abstract)
 \begin{resumo}[Abstract]
 	\begin{otherlanguage*}{english}
-		
-		Food is a necessity that everyone needs and in a modern society most food products are bought in supermarkets, the price of these products directly impacts how much people are able to buy food for families, this raises questions about how much people need earn to buy your food and if your salary is sufficient for your needs. This work focused on the development of a system and an application that would provide data from the basic basket of Paraíso do Tocantins, where the data was collected, but there was no system to make these data available for public consultation.
+	
+	Food is a necessity that all people need to survive, in a modern society most food products are bought in supermarkets, the price of these products directly impacts how much people are able to buy food for families, this raises questions about how much people need to earn to buy their food and if their salary is sufficient for their needs. This work focused on the development of a system and an application that would provide the cost of the basic basket of Paraíso do Tocantins, where an IFTO project does the basic basket research, but there was no system to make this data available for public consultation.
 		
 		\noindent 
-		\textbf{Keywords}: Basic Basket, Django, Flutter
+		\textbf{Keywords}: Basic Basket, Web System, Application
 	\end{otherlanguage*}
 \end{resumo}
 
@@ -229,8 +229,8 @@ Agradeço a todos que me ajudaram a concluir esse curso, principalmente meus pai
 	%	\item[IBGE]{Instituto Brasileiro de Geografia e Estatística}
 	\item[IFTO]{Instituto Federal de Educação, Ciência e Tecnologia do Tocantins}
 	\item[DIEESE]{Departamento Intersindical de Estatística e Estudos Socioeconômicos}
-	\item[SDK]{Kit de Desenvolvimento de Software}
-	\item [API]{Interface de Programação de Aplicativos}
+	\item[SDK]{Software Development Kit (Kit de Desenvolvimento de Software)}
+	\item [API]{Application Programming Interface (Interface de Programação de Aplicativos)}
 	\item[CRUD]{Criação, Consulta, Atualização e Destruição de Dados}
 	\item[PROCON]{Programa de Proteção e Defesa do Consumidor}
 	% Incluir as siglas aqui ...
@@ -293,7 +293,7 @@ Quando já tiver dados estruturados e relacionais possibilita-se futuramente uti
 	
 		\subsection{Objetivo geral}
 		
-			Desenvolver um sistema \textit{Web} e um aplicativo que possibilita para a população de Paraíso do Tocantins consultar o preço e produtos que compõe a Cesta Básica.
+			Desenvolver um sistema \textit{Web} e um aplicativo que possibilita para a população de Paraíso do Tocantins consultar o preço médio e produtos que compõe a Cesta Básica.
 		
 		\subsection{Objetivos específicos}
 		
@@ -308,10 +308,10 @@ Quando já tiver dados estruturados e relacionais possibilita-se futuramente uti
 	\section{Cesta Básica}
 O termo cesta básica se refere há um conjunto de produtos alimentícios que um trabalhador adulto precisa consumir para se manter biologicamente e socialmente, sendo importante para avaliação do desenvolvimento socioeconômico de uma localidade. Com a cesta básica pode se avaliar o salário mínimo e entender comportamento do poder de compra, sendo que o salário mínimo constitucional deve atender às necessidades que os trabalhadores e suas famílias precisam para se manter na sociedade \cite{araujo2007impacto}.
 
-A cesta básica foi instituída por meio de decreto federal, que teve por objetivo fazer uma correlação entre quanto os trabalhadores estão ganhando e o custo de vida alimentar. O cálculo da cesta básica é importante para saber se o salário mínimo é suficiente para que um trabalhador possa manter sua família alimentada.
+A cesta básica foi instituída pelo governo federal em 1938, que teve por objetivo fazer uma correlação entre quanto os trabalhadores estão ganhando e o custo de vida alimentar. O cálculo da cesta básica é importante para saber se o salário mínimo é suficiente para que um trabalhador possa manter sua família alimentada.
 
 \section{Desenvolvimento de Sistemas Para Internet}
-A Internet é a mídia mais promissora atualmente, a distância geográfica hoje não é mais um problema para se transmitir informação, sendo acessível para ricos e pobres, seu custo de criação e divulgação de conteúdo é extremamente mais baixo, tornando a internet um lugar atrativo para divulgar conteúdo \cite{moran1997utilizar}. A internet também possibilita distribuir informações de forma fácil e quase em tempo real, isso faz da internet hoje o meio mais utilizado para disseminar informações.
+A Internet é a mídia mais promissora disponível, a distância geográfica hoje não é mais um problema para se transmitir informação, sendo acessível para ricos e pobres, seu custo de criação e divulgação de conteúdo é extremamente mais baixo, tornando a internet um lugar atrativo para divulgar conteúdo \cite{moran1997utilizar}. A internet também possibilita distribuir informações de forma fácil e quase em tempo real, isso faz da internet hoje o meio mais utilizado para disseminar informações.
 
 Com a internet pode-se acessar uma enorme quantidade de informações que estão disponíveis em todo o mundo, pois pode ser considerada a mais completa, abrangente e complexa ferramenta de aprendizado do mundo. Com a internet pode se pesquisar e discutir várias fontes de informação e diferentes áreas do conhecimento \cite{garcia2002internet}.
 
@@ -319,15 +319,15 @@ A tecnologia \textit{Web} funciona como uma forma de repositório de documentos 
 
 O processo para desenvolvimento de um sistema \textit{Web} não pode ser considerado algo trivial, pois envolve analisar e compreender determinado problema, devem ser incorporados vários aspectos para que ele possa ser acessado de forma remota e segura no navegador \cite{miletto2014desenvolvimento}. O desenvolvimento de um sistema \textit{Web} pode falhar se não houver um planejamento adequado, antes de começar a programar é necessário entender o problema a ser resolvido, pois, caso o problema não tenha sido entendido pode ser necessário fazer correções que podem gerar muito trabalho não planejado.
 
-Ao desenvolver uma aplicação que realize tarefas repetitivas ou que são comuns a vários sistemas é recomendado a utilização de um framework, pois assim evita-se de perder tempo montando e testando um sistema para validação de dados se existe uma ferramenta que já faz isso, além de uma comunidade que contribui para o aumento da segurança e da estabilidade \cite{OqueeumF24:online}.
+Ao desenvolver uma aplicação que realize tarefas repetitivas ou que são comuns a vários sistemas é recomendado a utilização de um \textit{framework}, pois assim evita-se de perder tempo montando e testando um sistema para validação de dados se existe uma ferramenta que já faz isso, além de uma comunidade que contribui para o aumento da segurança e da estabilidade \cite{OqueeumF24:online}.
 
-Os frameworks são amplamente utilizado atualmente, vários frameworks são desenvolvidos com objetivos de facilitar diferentes atividades de programação, por ter vários tipos de frameworks diferentes pode se escolher aquele que achar mais apropriado para o projeto. A desvantagem dos frameworks está no fato de que eles possuem estruturas de programação bem definidas e que devem ser seguidas, o que necessita de pessoas que tenham um conhecimento bem específico da ferramenta.
+Os \textit{frameworks} são amplamente utilizado atualmente, vários \textit{frameworks} são desenvolvidos com objetivos de facilitar diferentes atividades de programação, por ter vários tipos de \textit{frameworks} diferentes pode se escolher aquele que achar mais apropriado para o projeto. A desvantagem dos \textit{frameworks} está no fato de que eles possuem estruturas de programação bem definidas e que devem ser seguidas, o que necessita de pessoas que tenham um conhecimento bem específico da ferramenta.
 
 
 \section{Django}
-Django é um framework de código aberto para o desenvolvimento escrito na linguagem Python, criado para desenvolvimento rápido de aplicações \textit{Web}.  Sua estrutura é dividida em 3 camadas, sendo Model, Template e View. Conseguiu popularidade ao se firmar como uma aplicação \textit{Web} dinâmica altamente eficaz, pois reduz tempo e permite construir aplicações \textit{Web} com qualidade e de fácil manutenção \cite{badindesenvolvimento}.
+Django é um \textit{framework} de código aberto para o desenvolvimento escrito na linguagem Python, criado para desenvolvimento rápido de aplicações \textit{Web}.  Sua estrutura é dividida em 3 camadas, sendo Model, Template e View. Conseguiu popularidade ao se firmar como uma aplicação \textit{Web} dinâmica altamente eficaz, pois reduz tempo e permite construir aplicações \textit{Web} com qualidade e de fácil manutenção \cite{badindesenvolvimento}.
 
-O Django possui uma estrutura simples para ser operado, com poucas divisões de classes e possui uma confiabilidade para garantir a segurança da aplicação, pode ser considerado bem mais simples se comparado com outros frameworks e possui desempenho de execução rápido para diminuir o processamento durante as requisições.
+O Django possui uma estrutura simples para ser operado, com poucas divisões de classes e possui uma confiabilidade para garantir a segurança da aplicação, pode ser considerado bem mais simples se comparado com outros \textit{frameworks} e possui desempenho de execução rápido para diminuir o processamento durante as requisições.
 
 Como o Django foi desenvolvido para um ambiente de sala de notícias onde precisava desenvolver rápido, ele foi projetado para tornar as tarefas comuns de desenvolvimento da \textit{Web} mais rápidas e fáceis. Sua sintaxe do modelo de dados oferece muitas maneiras ricas de representar seus modelos, sua estrutura resolve muitos anos de problemas no esquema do banco de dados. Sendo incluso uma API Python gratuita e rica para acessar seus dados, e uma interface administrativa profissional pronta para produção \cite{Djangoem92:online}.
 
@@ -344,18 +344,18 @@ No início de um projeto os desenvolvedores devem decidir construir aplicativos 
 É um erro comum para a desenvolvimento móvel achar que não é necessário um aplicativo só por que a aplicação \textit{Web} abre no browser do dispositivo, páginas \textit{Web} não foram projetadas para poderem ser acessadas em dispositivos móveis, há questões como tamanho, tags específicas, animações complexas e efeito de mouseover, isso gera baixa usabilidade e performance \cite{Introduc9:online}.
 
 No entanto quando se determina uma plataforma específica faz com que as outras plataformas sejam excluídas e assim os usuários que utilizam a plataforma acabam sendo prejudicados.
-Com o advento da programação para tecnologias móveis surgiram inúmeros frameworks e a divisão de soluções móveis foram três categorias: Nativa, \textit{WebApps} e Híbridas \cite{Desenvol53:online}.
+Com o advento da programação para tecnologias móveis surgiram inúmeros \textit{frameworks} e a divisão de soluções móveis foram três categorias: Nativa, \textit{WebApps} e Híbridas \cite{Desenvol53:online}.
 
 No entanto quando se desenvolve aplicativos nativos para duas plataformas diferentes gera um maior gasto de tempo e dinheiro, e quando se desenvolve aplicativos do tipo \textit{WebApps} não é possível utilizar recursos do dispositivo, nesse caso os aplicativos híbridos que são parte nativo e parte \textit{Web}, em determinados casos podem ser mais vantajoso sua utilização.
 Os aplicativos multiplataforma possuem vantagens pois permitem um maior alcance de usuários, o desenvolvimento se torna facilitado, mais fácil manutenção, tem um custo menor no desenvolvimento e o mesmo código irá funcionar em mais de uma plataforma \cite{Benefits70:online}.
 
-O mercado principal no Brasil é Android, o que direciona o desenvolvimento do aplicativo para esse sistema operacional móvel, no entanto com a utilização de um framework híbrido pode se expandir quando houver necessidade, sem muito trabalho, pois serão poucas configurações necessárias para que seja disponibilizado para outra plataforma.
+O mercado principal no Brasil é Android, o que direciona o desenvolvimento do aplicativo para esse sistema operacional móvel, no entanto com a utilização de um \textit{framework} híbrido pode se expandir quando houver necessidade, sem muito trabalho, pois serão poucas configurações necessárias para que seja disponibilizado para outra plataforma.
 
 Aplicativos híbridos costumam ter um desempenho inferior ao desenvolvimento nativo, mas pela possibilidade de se desenvolver mais rápido e com menos código pode compensar em vários caso, nesse projeto focou no desenvolvimento de aplicativo híbrido, pois economiza menos tempo de programação.
 
 
 \section{Flutter}
-O Flutter é um framework lançado pela Google, sendo recente no mercado, no entanto ele se destaca por sua proposta bem diferente do que seus concorrentes, pois permite desenvolvimento para Android e iOS de forma nativa utilizando a linguagem Dart a partir da composição de Widgets \cite{Conhecen37:online}.
+O Flutter é um \textit{framework} lançado pela Google, sendo recente no mercado, no entanto ele se destaca por sua proposta bem diferente do que seus concorrentes, pois permite desenvolvimento para Android e iOS de forma nativa utilizando a linguagem Dart a partir da composição de Widgets \cite{Conhecen37:online}.
 
 O SDK do Flutter converte as aplicações para código nativo, permitindo assim criar aplicativos para dispositivos móveis com interfaces nativas de alta qualidade no iOS e Android, foi projetado para que os desenvolvedores possa desenvolver em tempo recorde, sendo gratuito e de código aberto \cite{flutterf54:online}.
 
@@ -365,7 +365,18 @@ Sua estrutura fornece para que os designers uma visão que permite uma grande li
 
 Dart é uma linguagem de programação desenvolvida pela Google projetada para ser forma estruturada, orientada a objetos e flexível. Foi projeto para ter uma sintaxe familiar e natural para os programadores, sendo fácil de aprender e sintaxe familiar com linguagem como Java e C++ \cite{DartNova22:online}.
 
-O desenvolvimento de aplicativos com o framework flutter ainda está se estabelecendo no mercado, mas já se tornou um dos principais frameworks para desenvolvimento, sua facilidade de programar e seus resultados satisfatórios estão tornando o framework bastante conhecido e usado quando se pensa em programar aplicativos.
+O desenvolvimento de aplicativos com o \textit{framework} flutter ainda está se estabelecendo no mercado, mas já se tornou um dos principais \textit{frameworks} para desenvolvimento, sua facilidade de programar e seus resultados satisfatórios estão tornando o \textit{framework} bastante conhecido e usado quando se pensa em programar aplicativos.
+
+\section{Banco de Dados e Mysql}
+Devido ao tipo de dados utilizado no projeto o banco de dados precisava ser relacional e também utilizar linguagem SQL, por ser a linguagem mais popular e de conhecimento do desenvolvedor. Depois de verificar alguns possíveis bancos de dados para o projeto, o escolhido foi o MySQL, ele foi escolhido por ser o banco de dados padrão utilizado junto com a hospedagem fornecida.
+
+
+O MySQL é um banco de dados completo, robusto e extremamente rápido, possuído também todas as características dos principais bancos de dados pagos existentes no mercado. A sua licença permite a sua utilização de forma gratuita, seja para fins acadêmicos ou comerciais \cite{milani2007mysql}.
+
+\section{Servidor \textit{Web}}
+Para que o sistema \textit{Web} fosse disponibilizado para todas as pessoas foi preparado um servidor \textit{Web}. Um servidor \textit{Web} é um equipamento, ou seja, um computador com \textit{software} e \textit{hardware} configurados para hospedagem de aplicações. O \textit{software} é responsável por processar requisições e responder de maneira adequada, os bancos de dados também ficam hospedados no Servidor \textit{Web}  \cite{OqueumS70:online}.
+
+O Sistema da Cesta Básica foi hospedado em um servidor \textit{Web} do IFTO \textit{campus} Paraíso, e através do endereço e possível fazer seu acesso em qualquer lugar. O Sistema da Cesta Básica continuará funcionando enquanto o servidor \textit{Web} continuar hospedado o sistema e o banco de dados.
 
 
 \section{Trabalhos Relacionados}
@@ -385,7 +396,7 @@ Para começar o projeto foi um levantamento de todos os dados já levantados da 
 	\hline
 	PRODUTO           & QUANTIDADE         & BASE DE CÁLCULO \\
 	\hline
-	\multicolumn{3}{|c|}{CESTA BÁSICA}                         \\
+	\multicolumn{3}{|c|}{ALIMENTAÇÃO (CESTA BÁSICA)}                         \\
 	\hline
 	Carne             & 4,5 Kg             & 4,5             \\
 	\hline
@@ -465,27 +476,17 @@ Para começar o projeto foi um levantamento de todos os dados já levantados da 
 	\caption{Lista de Produtos Pesquisados}
 \end{longtable}
 
-Os produtos presentes na Tabela 01 foram selecionados com base na tabela de provisões mínimas estipuladas pelo Decreto Lei n$^{\circ}$ 399 de 1938 para o cálculo da cesta básica. Para complementar a pesquisa foram incluídos na pesquisa outros produtos que também são consumidos pela população da cidade e que se encontram também nas pesquisas da Fundação PROCON SP\footnote{http://www.procon.sp.gov.br/categoria.asp?id=111} e do PROCON/AP\footnote{https://www.portal.ap.gov.br/noticia/1104/procon-divulga-pesquisa-de-precos-da-cesta-basica-em-macapa}.
+Os produtos presentes na Tabela 1 foram selecionados com base na tabela de provisões mínimas estipuladas pelo Decreto Lei n$^{\circ}$ 399 de 1938 para o cálculo da cesta básica. Para complementar a pesquisa foram incluídos na pesquisa outros produtos que também são consumidos pela população da cidade e que se encontram também nas pesquisas da Fundação PROCON SP\footnote{http://www.procon.sp.gov.br/categoria.asp?id=111} e do PROCON/AP\footnote{https://www.portal.ap.gov.br/noticia/1104/procon-divulga-pesquisa-de-precos-da-cesta-basica-em-macapa}.
+
+A tabela é dividida em quatro tipos de produtos, sendo os primeiros os alimentos presentes no cálculo da cesta básica, somente esses produtos são utilizados para calcular o preço da cesta básica. Os demais produtos apesar de não serem utilizados para o caculo da cesta básica, eles servem para ver a evolução dos preços, pois também são produtos bastantes consumidos.
+
+A base de cálculo serve para faze a proporcionalidade, ou seja, a metodologia de pesquisa estima uma quantidade de consumo do produto, no entanto, a embalagem pode conter uma quantidade diferente, então é necessário fazer com que o valor do produto se proporcional a quantidade da Tabela 1.
 
 Orientado pela metodologia do DIEESE\footnote{https://www.dieese.org.br/metodologia/metodologiaCestaBasica.pdf} e seguindo a lista de produtos da Tabela 1 os alunos que participaram da pesquisa visitam todo mês 10 supermercados dentro da cidade de Paraíso do Tocantins, com base nas vendas dos produtos dentre esses supermercados após análise com base em produtos mais vendidos são as três marcas de cada tipo presente na Tabela 1.
 
-Para fazer o cálculo do preço dos produtos em relação ao percentual de consumo definido na quantidade da cesta básica foi utilizado a seguinte regra de 3.
 
-\begin{center}	
-	$\displaystyle\frac{\mbox {Base Produto$^{C}$ }}{\mbox { Preço Produto$^{A}$ }}=\frac{\mbox {Base de Cálculo$^{B}$} }{\mbox {Preço Percentual$^{D}$}}$
-\end{center}
+Para saber quanto seria o custo de um produto é levando em conta a quantidade da tabela é feito a média de todos os preços percentual do tipo do produto, esse cálculo leva em conta todos os estabelecimentos que tem aquele produto. Para calcular o valor da cesta básica, é necessário somar a média dos preços percentuais dos produtos na tabela que estão incluídos na cesta básica.
 
-\begin{enumerate}[label=(\Alph*)]
-	\item Preço Produto: Preço do produto pesquisado exatamente como no estabelecimento.
-	\item Base de Cálculo: Como alguns produtos são medidos como Unidade e Metros não é possível utilizar a mesma regra de cálculo para os produtos de Quilo e Litros, então foi adicionado um campo chamado base de cálculo, esse campo faz equivalência da quantidade do produto, só que expresso em forma decimal para facilitar na hora de calcular.
-	\item Base Produto: Valor de equivalência em relação a quantidade do produto na embalagem.
-	\item Preço Percentual: Corresponde ao valor do produto se comprasse exatamente a quantidade estipulada na tabela.
-	
-\end{enumerate}
-
-Para saber quanto seria o custo de um produto levando em conta a quantidade da tabela é feito a média de todos os preços percentual do tipo do produto, esse cálculo leva em conta todos os estabelecimentos que tem aquele produto. Para calcular o valor da cesta básica, é necessário somar a média dos preços percentuais dos produtos na tabela que estão incluídos na cesta básica.
-
-Nessa primeira etapa do projeto foi priorizado desenvolvimento da versão \textit{Web}, não foram feitos considerados os principais diagramas da UML para modelagem do sistema, pois não tinha ainda planejado uma visão final de como o sistema iria ser no final, isso foi sendo modelado enquanto era feito seu desenvolvimento, mais na segunda etapa será revisto a engenharia de como o projeto foi desenvolvido e escrito a documentação dos softwares.
 
 Tendo em vista que o sistema deveria ser mais amigável  possível para os usuários foi pensado inicialmente na melhor forma de calcular o valor da cesta básica, para isso foi montado um diagrama de banco de dados relacional que atendesse esse sistema de forma a torná-lo expansivo se necessário.
 \begin{figure}[H]
@@ -506,7 +507,7 @@ Os produtos foram separados das marcas para facilitar na mineração de dados fu
 	
 \chapter{Desenvolvimento}
 	
-Após a finalização da decisão do banco de dados foi para o desenvolvimento do sistema \textit{Web}, onde a tecnologia escolhida foi o framework Django que é escrito em Python. Esse framework foi escolhido por padronização do IFTO, onde é preferencialmente que se desenvolva aplicações utilizando esse framework.
+O desenvolvimento do projeto deu se inicio com a verificação de todos os dados já coletados da cesta básica, onde se encontravam em uma planilha eletrônica, em seguida foi feito o planejamento do sistema em cima da metodologia utilizada para a coleta dos dados, depois de compreender como os dados deveriam ser estruturados e a aplicação deveria funcionar e que começou o desenvolvimento com o \textit{framework} Django.
 
 O Django possui uma estrutura bem simples de utilização, criando o arquivo de Model e descrevendo toda a modelagem do banco de dados na sua tela administrador onde é possível fazer toda a gerência dos dados, sem precisar programar toda a estrutura do CRUD.
 
@@ -547,7 +548,7 @@ O sistema \textit{Web} foi hospedado dendo dos servidores do IFTO, no projeto fo
 
 Após a conclusão do sistema \textit{Web} foi dado início ao planejamento do aplicativo, a proposta do aplicativo é que ele possa ser usado mesmo sem internet, então foi feito o desenvolvimento de uma API no sistema \textit{Web} para que o aplicativo possa baixa os dados e salvar localmente no dispositivo do usuário.
 
-Para fazer o desenvolvimento do aplicativo foi escolhido o framework Flutter, pois ele permitir desenvolver em linguagem nativa tanto para Android e iOS. Devido aos alto custo para colocar o aplicativo na \textit{Apple Store} foi decidido não lançar o aplicativo para essa plataforma, apenas foi lançado o aplicativo para Android na \textit{Play Store}.
+Para fazer o desenvolvimento do aplicativo foi escolhido o \textit{framework} Flutter, pois ele permitir desenvolver em linguagem nativa tanto para Android e iOS. Devido aos alto custo para colocar o aplicativo na \textit{Apple Store} foi decidido não lançar o aplicativo para essa plataforma, apenas foi lançado o aplicativo para Android na \textit{Play Store}.
 
 \begin{figure}[!h]
 	\begin{center}
@@ -567,7 +568,7 @@ resultado, o resultado que era esperado foi definido no início do projeto, no e
 resultados foram planejados depois que começou o projeto através de várias discussões sobre quais deveriam ser as
 melhores práticas e ferramentas para o desenvolvimento.
 
-Houve a necessidade por parte do desenvolvedor de aprender a utilização dos frameworks Django e Flutter que ainda
+Houve a necessidade por parte do desenvolvedor de aprender a utilização dos \textit{frameworks} Django e Flutter que ainda
 não era do seu conhecimento, mas isso não foi um grande empecilho para o projeto, pois o tempo de duração do
 projeto era suficiente para aprendizado das ferramentas e o desenvolvimento, as outras ferramentas utilizadas já eram
 de conhecimento do desenvolvedor e apenas alguns detalhes a mais tiveram que ser buscado para o
