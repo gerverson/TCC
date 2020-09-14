@@ -247,6 +247,16 @@ brazil % o último idioma é o principal do documento
    \renewcommand{\imprimirtitulacaoorientador}{#2}%
    \renewcommand{\imprimirorientador}{#3}}
 
+% Comandos de dados - coorientador
+\providecommand{\imprimircoorientadorRotulo}{}
+\providecommand{\imprimircoorientador}{}
+\providecommand{\imprimirtitulacaocoorientador}{}
+\renewcommand{\coorientador}[3][\coorientadorname]%
+{\renewcommand{\imprimircoorientadorRotulo}{#1}%
+	\renewcommand{\imprimirtitulacaocoorientador}{#2}%
+	\renewcommand{\imprimircoorientador}{#3}}
+
+
 \renewcommand{\folhaderostocontent}{
 	\begin{center}    
 		\imprimirbrasao
@@ -270,14 +280,14 @@ brazil % o último idioma é o principal do documento
 	  \small\imprimirpreambulo
 	  \vspace{0.5cm}
 	  {\par{\normalsize\bfseries\imprimirorientadorRotulo}~\imprimirtitulacaoorientador~\normalsize\imprimirorientador\par}
+	  {\par{\normalsize\bfseries\imprimircoorientadorRotulo}~\imprimirtitulacaocoorientador~\normalsize\imprimircoorientador\par}
 	  \end{minipage}%
 	  \vspace*{\fill}
 	}%
 	
 	% Caso exista coorientador.
-	\abntex@ifnotempty{\imprimircoorientador}{%
-	  {\normalsize\imprimircoorientadorRotulo~\imprimircoorientador}%
-	}%
+%	  {\normalsize\imprimircoorientadorRotulo~\imprimircoorientador}%
+%	}%
 	
 	\vspace*{\fill}
 	
